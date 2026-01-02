@@ -2,14 +2,33 @@
  * Klangschalenmassage - Main JavaScript
  */
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     lucide.createIcons();
     initMobileMenu();
     initScrollAnimations();
     initFAQAccordion();
     initSmoothScroll();
     initContactForm();
+    initPhoneReveal();
 });
+
+/**
+ * Phone number reveal for spam protection
+ */
+function initPhoneReveal() {
+    document.querySelectorAll('.phone-reveal').forEach(btn => {
+        btn.addEventListener('click', function () {
+            const container = this.parentElement;
+            const phoneSpan = container.querySelector('.phone-hidden');
+            if (phoneSpan) {
+                const fullNumber = phoneSpan.getAttribute('data-phone');
+                phoneSpan.textContent = fullNumber;
+                phoneSpan.classList.remove('phone-hidden');
+                this.remove();
+            }
+        });
+    });
+}
 
 function initMobileMenu() {
     const menuBtn = document.getElementById('mobile-menu-btn');
@@ -45,7 +64,7 @@ function initFAQAccordion() {
 
 function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
                 e.preventDefault();
@@ -56,7 +75,7 @@ function initSmoothScroll() {
 }
 
 function initContactForm() {
-    document.getElementById('contact-form')?.addEventListener('submit', function(e) {
+    document.getElementById('contact-form')?.addEventListener('submit', function (e) {
         e.preventDefault();
         alert('Vielen Dank für Ihre Nachricht!');
         this.reset();
