@@ -1,0 +1,179 @@
+/* ==========================================================================
+   Klangschalenmassage - Custom Styles
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Font Families
+   -------------------------------------------------------------------------- */
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-sans {
+    font-family: 'Inter', sans-serif;
+}
+
+/* --------------------------------------------------------------------------
+   Animations
+   -------------------------------------------------------------------------- */
+
+/* Main entrance animation */
+@keyframes animationIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+        filter: blur(8px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0px);
+    }
+}
+
+/* Fade slide in animation for scroll elements */
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slow zoom for hero background */
+@keyframes zoomSlow {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Animation classes */
+.animate-in {
+    animation: animationIn 0.8s ease-out both;
+}
+
+.fade-slide-in {
+    animation: fadeSlideIn 1s ease-out both;
+}
+
+.hero-zoom {
+    animation: zoomSlow 20s linear infinite alternate;
+}
+
+/* Scroll-triggered animations - paused by default */
+.animate-on-scroll {
+    animation-play-state: paused !important;
+}
+
+.animate-on-scroll.animate {
+    animation-play-state: running !important;
+}
+
+/* --------------------------------------------------------------------------
+   Logo
+   -------------------------------------------------------------------------- */
+.logo {
+    background-image: url('https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/dd8bdb6c-1139-457a-847a-ff2fbb585152_320w.webp');
+}
+
+/* --------------------------------------------------------------------------
+   Gradient Border Effect
+   -------------------------------------------------------------------------- */
+.border-gradient {
+    position: relative;
+}
+
+.border-gradient::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    padding: 1px;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    background: linear-gradient(225deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.0) 100%);
+    pointer-events: none;
+}
+
+/* --------------------------------------------------------------------------
+   FAQ Accordion
+   -------------------------------------------------------------------------- */
+.faq-item .faq-panel {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.faq-item[data-open="true"] .faq-panel {
+    max-height: 200px;
+    opacity: 1;
+}
+
+.faq-item[data-open="true"] {
+    background: linear-gradient(to bottom, rgb(255 247 237 / 0.5), white);
+}
+
+.faq-item[data-open="true"] .faq-icon {
+    background-color: rgb(255 237 213);
+    color: rgb(180 83 9);
+    ring-color: rgb(253 186 116 / 0.5);
+}
+
+.faq-item[data-open="true"] .faq-icon i {
+    transform: rotate(45deg);
+}
+
+.faq-icon i {
+    transition: transform 0.2s ease;
+}
+
+/* --------------------------------------------------------------------------
+   Form Styles
+   -------------------------------------------------------------------------- */
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+/* --------------------------------------------------------------------------
+   Smooth Scroll
+   -------------------------------------------------------------------------- */
+html {
+    scroll-behavior: smooth;
+}
+
+/* --------------------------------------------------------------------------
+   Selection Color
+   -------------------------------------------------------------------------- */
+::selection {
+    background-color: rgb(253 186 116);
+    color: rgb(67 20 7);
+}
+
+/* --------------------------------------------------------------------------
+   Custom Scrollbar
+   -------------------------------------------------------------------------- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(245 245 244);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(168 162 158);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(120 113 108);
+}
