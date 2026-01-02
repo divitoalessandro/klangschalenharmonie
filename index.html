@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="de" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Klangschalenmassage - Roberta | Zürich</title>
-    <meta name="description" content="Klangschalenmassage für dein inneres Gleichgewicht. Finde Entspannung, Gelassenheit und innere Harmonie mit Roberta in Zürich.">
-    
+    <title>Klangschalenmassage - Roberta | Schaffhausen</title>
+    <meta name="description"
+        content="Klangschalenmassage für dein inneres Gleichgewicht. Finde Entspannung, Gelassenheit und innere Harmonie mit Roberta in Schaffhausen.">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body class="font-sans bg-stone-50 text-stone-900">
 
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-40 transition-all duration-300" id="navbar">
-        <div class="transition-all duration-300 bg-stone-50/95 border-stone-200/50 border-b absolute top-0 right-0 bottom-0 left-0" id="nav-bg"></div>
+        <div class="transition-all duration-300 bg-stone-50/95 border-stone-200/50 border-b absolute top-0 right-0 bottom-0 left-0"
+            id="nav-bg"></div>
         <div class="flex h-20 max-w-7xl mr-auto ml-auto pr-6 pl-6 relative items-center justify-between">
             <a href="#" class="flex items-center gap-3 group">
                 <div class="logo bg-center w-[225px] h-[50px] bg-cover"></div>
             </a>
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-stone-600">
+            <div class="hidden lg:flex items-center gap-6 text-sm font-medium text-stone-600">
                 <a href="#benefits" class="transition-colors hover:text-orange-700">Vorteile</a>
                 <a href="#about" class="transition-colors hover:text-orange-700">Über mich</a>
                 <a href="#impact" class="transition-colors hover:text-orange-700">Wirkung</a>
@@ -35,20 +41,23 @@
                 <a href="#contact" class="transition-colors hover:text-orange-700">Kontakt</a>
                 <a href="#testimonials" class="transition-colors hover:text-orange-700">Stories</a>
             </div>
-            <div class="hidden md:block">
-                <a href="#booking" class="px-5 py-2.5 rounded-full text-xs font-medium tracking-wide transition-colors bg-orange-700 text-white hover:bg-orange-800">
+            <div class="hidden lg:block">
+                <a href="#pricing"
+                    class="px-5 py-2.5 rounded-full text-xs font-medium tracking-wide transition-colors bg-orange-700 text-white hover:bg-orange-800">
                     Termin buchen
                 </a>
             </div>
-            <button class="md:hidden p-2 text-stone-700" id="mobile-menu-btn" aria-label="Menu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <button class="lg:hidden p-2 text-stone-700" id="mobile-menu-btn" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M4 5h16"></path>
                     <path d="M4 12h16"></path>
                     <path d="M4 19h16"></path>
                 </svg>
             </button>
         </div>
-        <div id="mobile-menu" class="hidden absolute top-20 left-0 w-full border-b p-6 flex flex-col gap-4 md:hidden bg-stone-50 border-stone-200">
+        <div id="mobile-menu"
+            class="hidden absolute top-20 left-0 w-full border-b p-6 flex flex-col gap-4 lg:hidden bg-stone-50 border-stone-200">
             <a href="#benefits" class="text-base text-stone-700">Vorteile</a>
             <a href="#about" class="text-base text-stone-700">Über mich</a>
             <a href="#impact" class="text-base text-stone-700">Wirkung</a>
@@ -56,27 +65,37 @@
             <a href="#contact" class="text-base text-stone-700">Kontakt</a>
             <a href="#faq" class="text-base text-stone-700">FAQ</a>
             <a href="#testimonials" class="text-base text-stone-700">Stories</a>
-            <a href="#booking" class="text-base font-medium text-orange-700">Termin buchen</a>
+            <a href="#pricing" class="text-base font-medium text-orange-700">Termin buchen</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <header class="relative w-full min-h-screen overflow-hidden">
         <div class="absolute inset-0 w-full h-full hero-zoom">
-            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/8860e654-9152-43a0-9c2f-5c43d549ea11_3840w.png" alt="Klangschalenmassage" class="w-full h-full object-cover">
+            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/8860e654-9152-43a0-9c2f-5c43d549ea11_3840w.png"
+                alt="Klangschalenmassage" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-r from-red-950/90 via-red-900/70 to-red-800/60"></div>
-            <div class="bg-gradient-to-b via-transparent from-red-950/40 to-red-950/80 absolute top-0 right-0 bottom-0 left-0"></div>
+            <div
+                class="bg-gradient-to-b via-transparent from-red-950/40 to-red-950/80 absolute top-0 right-0 bottom-0 left-0">
+            </div>
         </div>
 
-        <div class="flex flex-col min-h-screen z-10 h-full max-w-7xl mr-auto ml-auto pt-24 pr-6 pl-6 relative justify-center">
+        <div
+            class="flex flex-col min-h-screen z-10 h-full max-w-7xl mr-auto ml-auto pt-24 pr-6 pl-6 relative justify-center">
             <div class="max-w-2xl">
-                <h1 class="leading-tight animate-in md:text-7xl lg:text-6xl text-5xl text-white font-serif mb-8" style="animation-delay: 0.2s;">
-                    Klangschalenmassage für dein <span class="font-normal italic text-orange-400">inneres Gleichgewicht</span>
+                <h1 class="leading-tight animate-in md:text-7xl lg:text-6xl text-5xl text-white font-serif mb-8"
+                    style="animation-delay: 0.2s;">
+                    Klangschalenmassage für dein <span class="font-normal italic text-orange-400">inneres
+                        Gleichgewicht</span>
                 </h1>
 
                 <div class="flex flex-col sm:flex-row items-center gap-4 animate-in" style="animation-delay: 0.4s;">
-                    <a href="#booking" class="sm:w-auto transition-colors hover:bg-orange-400 text-sm font-medium text-red-950 text-center bg-orange-500 w-full rounded-full pt-4 pr-8 pb-4 pl-8">Klangmassage buchen</a>
-                    <a href="#benefits" class="sm:w-auto transition-colors flex items-center justify-center gap-2 group hover:bg-white/20 text-sm font-medium text-white bg-white/10 w-full border-white/20 border rounded-full pt-4 pr-8 pb-4 pl-8">Vorteile entdecken</a>
+                    <a href="#pricing"
+                        class="sm:w-auto transition-colors hover:bg-orange-400 text-sm font-medium text-red-950 text-center bg-orange-500 w-full rounded-full pt-4 pr-8 pb-4 pl-8">Klangmassage
+                        buchen</a>
+                    <a href="#benefits"
+                        class="sm:w-auto transition-colors flex items-center justify-center gap-2 group hover:bg-white/20 text-sm font-medium text-white bg-white/10 w-full border-white/20 border rounded-full pt-4 pr-8 pb-4 pl-8">Vorteile
+                        entdecken</a>
                 </div>
             </div>
         </div>
@@ -86,30 +105,44 @@
     <section class="bg-white pt-24 pb-24 relative" id="benefits">
         <div class="max-w-7xl mr-auto ml-auto pr-6 pl-6">
             <div class="mx-auto max-w-3xl text-center mb-16">
-                <h2 class="sm:text-4xl animate-on-scroll fade-slide-in text-3xl text-stone-900 tracking-tight font-serif" style="animation-delay: 0.1s;">Vorteile einer Klangschalenmassage</h2>
-                <p class="animate-on-scroll fade-slide-in text-stone-600 mt-4" style="animation-delay: 0.2s;">Finde heraus, wie die antike Klangschalenmassage zu deinem Wohlbefinden beitragen kann.</p>
+                <h2 class="sm:text-4xl animate-on-scroll fade-slide-in text-3xl text-stone-900 tracking-tight font-serif"
+                    style="animation-delay: 0.1s;">Vorteile einer Klangschalenmassage</h2>
+                <p class="animate-on-scroll fade-slide-in text-stone-600 mt-4" style="animation-delay: 0.2s;">Finde
+                    heraus, wie die antike Klangschalenmassage zu deinem Wohlbefinden beitragen kann.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="relative overflow-hidden rounded-2xl border p-8 animate-on-scroll fade-slide-in bg-stone-50 border-stone-200/50" style="animation-delay: 0.1s;">
-                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-full border mb-6 bg-orange-100 border-orange-200/50">
+                <div class="relative overflow-hidden rounded-2xl border p-8 animate-on-scroll fade-slide-in bg-stone-50 border-stone-200/50"
+                    style="animation-delay: 0.1s;">
+                    <div
+                        class="inline-flex items-center justify-center w-12 h-12 rounded-full border mb-6 bg-orange-100 border-orange-200/50">
                         <i data-lucide="brain" class="w-6 h-6 text-amber-700"></i>
                     </div>
                     <h3 class="text-xl font-medium text-stone-800 tracking-tight mb-3">Tiefe Entspannung</h3>
-                    <p class="leading-relaxed text-sm text-stone-600">Die resonanten Töne von Klangschalen versetzen den Geist in einen meditativen Zustand, reduzieren Stresshormone und fördern tiefe geistige Ruhe und Klarheit.</p>
+                    <p class="leading-relaxed text-sm text-stone-600">Die resonanten Töne von Klangschalen versetzen den
+                        Geist in einen meditativen Zustand, reduzieren Stresshormone und fördern tiefe geistige Ruhe und
+                        Klarheit.</p>
                 </div>
-                <div class="relative overflow-hidden rounded-2xl border p-8 animate-on-scroll fade-slide-in bg-stone-50 border-stone-200/50" style="animation-delay: 0.2s;">
-                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-full border mb-6 bg-orange-100 border-orange-200/50">
+                <div class="relative overflow-hidden rounded-2xl border p-8 animate-on-scroll fade-slide-in bg-stone-50 border-stone-200/50"
+                    style="animation-delay: 0.2s;">
+                    <div
+                        class="inline-flex items-center justify-center w-12 h-12 rounded-full border mb-6 bg-orange-100 border-orange-200/50">
                         <i data-lucide="heart-pulse" class="w-6 h-6 text-amber-700"></i>
                     </div>
                     <h3 class="text-xl font-medium text-stone-800 tracking-tight mb-3">Energiefluss aktivieren</h3>
-                    <p class="leading-relaxed text-sm text-stone-600">Schallschwingungen dringen in jede Zelle ein, verbessern die Durchblutung, lindern Schmerzen und unterstützen die natürlichen Heilungsprozesse des Körpers auf zellulärer Ebene.</p>
+                    <p class="leading-relaxed text-sm text-stone-600">Schallschwingungen dringen in jede Zelle ein,
+                        verbessern die Durchblutung, lindern Schmerzen und unterstützen die natürlichen Heilungsprozesse
+                        des Körpers auf zellulärer Ebene.</p>
                 </div>
-                <div class="overflow-hidden animate-on-scroll fade-slide-in bg-stone-50 border-stone-200/50 border rounded-2xl pt-8 pr-8 pb-8 pl-8 relative" style="animation-delay: 0.3s;">
-                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-full border mb-6 bg-orange-100 border-orange-200/50">
+                <div class="overflow-hidden animate-on-scroll fade-slide-in bg-stone-50 border-stone-200/50 border rounded-2xl pt-8 pr-8 pb-8 pl-8 relative"
+                    style="animation-delay: 0.3s;">
+                    <div
+                        class="inline-flex items-center justify-center w-12 h-12 rounded-full border mb-6 bg-orange-100 border-orange-200/50">
                         <i data-lucide="sparkles" class="w-6 h-6 text-amber-700"></i>
                     </div>
                     <h3 class="text-xl font-medium text-stone-800 tracking-tight mb-3">Energiehaushalt ausgleichen</h3>
-                    <p class="leading-relaxed text-sm text-stone-600">Stellen Sie die Harmonie Ihrer Chakren und Energiezentren wieder her. Die Frequenzen der Klangschalen helfen dabei, Blockaden zu lösen und den freien Fluss der Lebenskraft zu fördern.</p>
+                    <p class="leading-relaxed text-sm text-stone-600">Stellen Sie die Harmonie Ihrer Chakren und
+                        Energiezentren wieder her. Die Frequenzen der Klangschalen helfen dabei, Blockaden zu lösen und
+                        den freien Fluss der Lebenskraft zu fördern.</p>
                 </div>
             </div>
         </div>
@@ -122,16 +155,31 @@
                 <div class="lg:col-span-5 animate-on-scroll fade-slide-in" style="animation-delay: 0.1s;">
                     <div class="relative">
                         <div class="aspect-[4/5] rounded-3xl overflow-hidden border shadow-2xl border-stone-200/50">
-                            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/70139267-ec52-435d-beb7-272e2f3995b6_1600w.jpg" alt="Roberta - Klangschalen-Therapeutin" class="w-full h-full object-cover">
+                            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/70139267-ec52-435d-beb7-272e2f3995b6_1600w.jpg"
+                                alt="Roberta - Klangschalen-Therapeutin" class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
                 <div class="lg:col-span-7 animate-on-scroll fade-slide-in" style="animation-delay: 0.2s;">
-                    <span class="uppercase block text-xs font-medium text-orange-700 tracking-widest mb-4">Über mich</span>
-                    <h2 class="sm:text-4xl text-3xl text-stone-900 tracking-tight font-serif mb-6">Hallo, ich bin <span class="italic text-orange-700">Roberta</span></h2>
-                    <p class="leading-relaxed text-base text-stone-600 mb-6">Es gab eine Zeit, in der ich mich nicht mehr wohlgefühlt habe – eine innere Unzufriedenheit machte sich breit. Auf der Suche nach einer Lösung bin ich auf die Kraft der Klangschalen gestossen. Die sanften Schwingungen und harmonischen Klänge haben mich so tief berührt, dass ich meine innere Ruhe wiederfinden konnte.</p>
-                    <p class="leading-relaxed text-base text-stone-600 mb-8">Diese Erfahrung hat mich so fasziniert, dass ich begann, mich intensiv mit der Arbeit mit Klangschalen auseinanderzusetzen. Seither habe ich fünf Weiterbildungen in diesem Bereich absolviert und befinde mich aktuell in der Ausbildung zur Klangschalen-Therapeutin.</p>
-                    <p class="leading-relaxed text-base text-stone-600 mb-8">Heute ist es meine Herzensangelegenheit, anderen Menschen mit der wohltuenden Wirkung der Klangschalen zu mehr Entspannung, Gelassenheit und innerer Harmonie zu verhelfen. Gerade in unserer oft hektischen und lauten Welt geraten Körper und Seele schnell aus dem Gleichgewicht. In meinen Sitzungen lade ich dich ein, die heilsame Kraft der Klänge selbst zu erleben – für mehr Ausgeglichenheit und Wohlbefinden in deinem Alltag.</p>
+                    <span class="uppercase block text-xs font-medium text-orange-700 tracking-widest mb-4">Über
+                        mich</span>
+                    <h2 class="sm:text-4xl text-3xl text-stone-900 tracking-tight font-serif mb-6">Hallo, ich bin <span
+                            class="italic text-orange-700">Roberta</span></h2>
+                    <p class="leading-relaxed text-base text-stone-600 mb-6">Es gab eine Zeit, in der ich mich nicht
+                        mehr wohlgefühlt habe – eine innere Unzufriedenheit machte sich breit. Auf der Suche nach einer
+                        Lösung bin ich auf die Kraft der Klangschalen gestossen. Die sanften Schwingungen und
+                        harmonischen Klänge haben mich so tief berührt, dass ich meine innere Ruhe wiederfinden konnte.
+                    </p>
+                    <p class="leading-relaxed text-base text-stone-600 mb-8">Diese Erfahrung hat mich so fasziniert,
+                        dass ich begann, mich intensiv mit der Arbeit mit Klangschalen auseinanderzusetzen. Seither habe
+                        ich fünf Weiterbildungen in diesem Bereich absolviert und befinde mich aktuell in der Ausbildung
+                        zur Klangschalen-Therapeutin.</p>
+                    <p class="leading-relaxed text-base text-stone-600 mb-8">Heute ist es meine Herzensangelegenheit,
+                        anderen Menschen mit der wohltuenden Wirkung der Klangschalen zu mehr Entspannung, Gelassenheit
+                        und innerer Harmonie zu verhelfen. Gerade in unserer oft hektischen und lauten Welt geraten
+                        Körper und Seele schnell aus dem Gleichgewicht. In meinen Sitzungen lade ich dich ein, die
+                        heilsame Kraft der Klänge selbst zu erleben – für mehr Ausgeglichenheit und Wohlbefinden in
+                        deinem Alltag.</p>
                 </div>
             </div>
         </div>
@@ -143,11 +191,17 @@
             <div class="pt-8 pb-8">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
                     <div class="lg:col-span-4 animate-on-scroll fade-slide-in" style="animation-delay: 0.1s;">
-                        <h2 class="sm:text-4xl text-3xl font-medium text-stone-900 tracking-tight font-serif">Wie wirken Klangmassagen?</h2>
+                        <h2 class="sm:text-4xl text-3xl font-medium text-stone-900 tracking-tight font-serif">Wie wirken
+                            Klangmassagen?</h2>
                     </div>
                     <div class="lg:col-span-8 animate-on-scroll fade-slide-in" style="animation-delay: 0.2s;">
-                        <p class="sm:text-3xl lg:text-4xl leading-tight text-2xl font-medium text-stone-800 tracking-tight font-serif mb-8">Die Wissenschaft hinter den Klängen</p>
-                        <p class="leading-relaxed text-lg text-stone-600">Forschungen haben gezeigt, dass die Schwingungen von Klangschalen den Blutdruck senken, die Herzfrequenz verlangsamen und den Cortisolspiegel reduzieren können. Die Schallwellen erzeugen eine Vibrationsmassage, die jede Zelle Ihres Körpers erreicht und tiefe Heilung von innen heraus fördert.</p>
+                        <p
+                            class="sm:text-3xl lg:text-4xl leading-tight text-2xl font-medium text-stone-800 tracking-tight font-serif mb-8">
+                            Die Wissenschaft hinter den Klängen</p>
+                        <p class="leading-relaxed text-lg text-stone-600">Forschungen haben gezeigt, dass die
+                            Schwingungen von Klangschalen den Blutdruck senken, die Herzfrequenz verlangsamen und den
+                            Cortisolspiegel reduzieren können. Die Schallwellen erzeugen eine Vibrationsmassage, die
+                            jede Zelle Ihres Körpers erreicht und tiefe Heilung von innen heraus fördert.</p>
                     </div>
                 </div>
             </div>
@@ -159,22 +213,30 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="animate-on-scroll fade-slide-in text-center mb-16" style="animation-delay: 0.1s;">
                 <span class="uppercase block text-xs font-medium text-orange-700 tracking-widest mb-4">Preise</span>
-                <h2 class="sm:text-4xl text-3xl text-stone-900 tracking-tight font-serif">Welche Klangmassagen biete ich an?</h2>
-                <p class="text-stone-600 max-w-2xl mt-4 mr-auto ml-auto">Von der Einzelsitzung für Neugierige bis zur Mehrfachbuchung für bereits Begeisterte.</p>
+                <h2 class="sm:text-4xl text-3xl text-stone-900 tracking-tight font-serif">Welche Klangmassagen biete ich
+                    an?</h2>
+                <p class="text-stone-600 max-w-2xl mt-4 mr-auto ml-auto">Von der Einzelsitzung für Neugierige bis zur
+                    Mehrfachbuchung für bereits Begeisterte.</p>
             </div>
 
             <div class="relative overflow-hidden rounded-3xl border shadow-xl border-stone-200 bg-white">
-                <div class="absolute -right-20 -top-24 h-72 w-72 bg-gradient-to-tr rounded-full blur-3xl pointer-events-none from-orange-100/40 to-stone-100/20"></div>
+                <div
+                    class="absolute -right-20 -top-24 h-72 w-72 bg-gradient-to-tr rounded-full blur-3xl pointer-events-none from-orange-100/40 to-stone-100/20">
+                </div>
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-0">
                     <!-- Left Info -->
-                    <div class="p-6 sm:p-10 lg:col-span-1 animate-on-scroll fade-slide-in" style="animation-delay: 0.2s;">
-                        <span class="inline-flex items-center gap-2 text-xs text-stone-600 bg-stone-50 border-stone-200 border rounded-full pt-1.5 pr-3 pb-1.5 pl-3">
+                    <div class="p-6 sm:p-10 lg:col-span-1 animate-on-scroll fade-slide-in"
+                        style="animation-delay: 0.2s;">
+                        <span
+                            class="inline-flex items-center gap-2 text-xs text-stone-600 bg-stone-50 border-stone-200 border rounded-full pt-1.5 pr-3 pb-1.5 pl-3">
                             <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
                             KLANGSITZUNGEN
                         </span>
-                        <h2 class="mt-4 text-3xl sm:text-4xl tracking-tight font-serif text-stone-900">Klangbad Erlebnis</h2>
+                        <h2 class="mt-4 text-3xl sm:text-4xl tracking-tight font-serif text-stone-900">Klangbad Erlebnis
+                        </h2>
                         <p class="mt-3 max-w-sm text-stone-600">
-                            Jede Sitzung wird auf Ihre individuellen Bedürfnisse abgestimmt und kombiniert traditionelle Techniken mit intuitiver Heilung.
+                            Jede Sitzung wird auf Ihre individuellen Bedürfnisse abgestimmt und kombiniert traditionelle
+                            Techniken mit intuitiver Heilung.
                         </p>
 
                         <ul class="mt-6 space-y-3 text-sm text-stone-600">
@@ -195,20 +257,18 @@
                                 Persönlicher Ansatz
                             </li>
                         </ul>
-
-                        <a href="#booking" class="mt-6 inline-flex items-center gap-2 rounded-full h-11 px-5 border text-sm transition-colors bg-stone-100 hover:bg-stone-200 text-stone-700 border-stone-200">
-                            Beratung buchen
-                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                        </a>
                     </div>
 
                     <!-- Plans -->
-                    <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 border-t lg:border-l lg:border-t-0 border-stone-200">
+                    <div
+                        class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 border-t lg:border-l lg:border-t-0 border-stone-200">
                         <!-- Single Session -->
-                        <div class="p-6 sm:p-10 border-b md:border-b-0 md:border-r animate-on-scroll fade-slide-in border-stone-200" style="animation-delay: 0.3s;">
+                        <div class="p-6 sm:p-10 border-b md:border-b-0 md:border-r animate-on-scroll fade-slide-in border-stone-200"
+                            style="animation-delay: 0.3s;">
                             <div class="flex items-center justify-between">
                                 <h3 class="text-xl tracking-tight font-medium text-stone-800">Einzelsitzung</h3>
-                                <span class="inline-flex items-center gap-1 rounded-lg border px-2 py-1 text-xs text-stone-500 border-stone-200 bg-stone-50">
+                                <span
+                                    class="inline-flex items-center gap-1 rounded-lg border px-2 py-1 text-xs text-stone-500 border-stone-200 bg-stone-50">
                                     Zum Kennenlernen
                                 </span>
                             </div>
@@ -227,8 +287,8 @@
                                     <i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Nachbetreuung
                                 </li>
                             </ul>
-                            <button class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full h-11 text-sm font-medium transition-colors bg-orange-600 hover:bg-orange-700 text-white">
-                                <i data-lucide="calendar" class="w-4 h-4"></i>
+                            <button
+                                class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full h-11 text-sm font-medium transition-colors bg-orange-600 hover:bg-orange-700 text-white">
                                 Einzelsitzung buchen
                             </button>
                         </div>
@@ -236,19 +296,18 @@
                         <div class="p-6 sm:p-10 animate-on-scroll fade-slide-in" style="animation-delay: 0.4s;">
                             <div class="flex items-center justify-between">
                                 <h3 class="text-xl tracking-tight font-medium text-stone-800">4er-Paket</h3>
-                                <span class="inline-flex items-center gap-1 rounded-lg border px-2 py-1 text-xs border-orange-300 bg-orange-50 text-orange-700">
-                                    <span class="h-1.5 w-1.5 rounded-full bg-orange-500"></span>
-                                    Beste Wahl
-                                </span>
                             </div>
                             <div class="mt-3 flex items-end gap-2">
                                 <span class="text-4xl tracking-tight font-medium text-stone-900">CHF 299</span>
                                 <span class="text-stone-500 mb-1 text-sm">/Paket</span>
-                                <span class="text-xs border rounded-full px-2 py-0.5 text-orange-600 bg-orange-50 border-orange-200">12% sparen</span>
+                                <span
+                                    class="text-xs border rounded-full px-2 py-0.5 text-orange-600 bg-orange-50 border-orange-200">12%
+                                    sparen</span>
                             </div>
                             <ul class="mt-5 space-y-2 text-sm text-stone-600">
                                 <li class="flex items-center gap-2">
-                                    <i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Alles aus der Einzelsitzung
+                                    <i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Alles aus der
+                                    Einzelsitzung
                                 </li>
                                 <li class="flex items-center gap-2">
                                     <i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Fortschrittsverfolgung
@@ -257,9 +316,9 @@
                                     <i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Prioritätsbuchung
                                 </li>
                             </ul>
-                            <button class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full h-11 text-sm font-medium transition-colors bg-stone-900 text-white hover:bg-stone-800">
-                                <i data-lucide="gift" class="w-4 h-4"></i>
-                                Paket wählen
+                            <button
+                                class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full h-11 text-sm font-medium transition-colors bg-stone-900 text-white hover:bg-stone-800">
+                                4er-Paket buchen
                             </button>
                         </div>
                     </div>
@@ -271,16 +330,19 @@
     <!-- Testimonials Section -->
     <section class="overflow-hidden bg-white pt-24 pb-24" id="testimonials">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="flex animate-on-scroll fade-slide-in mb-12 items-end justify-between" style="animation-delay: 0.1s;">
+            <div class="flex animate-on-scroll fade-slide-in mb-12 items-end justify-between"
+                style="animation-delay: 0.1s;">
                 <div>
-                    <span class="uppercase block text-xs font-medium text-orange-700 tracking-widest mb-4">Erfahrungen</span>
+                    <span
+                        class="uppercase block text-xs font-medium text-orange-700 tracking-widest mb-4">Erfahrungen</span>
                     <h2 class="text-3xl font-serif tracking-tight text-stone-900">Kundenstimmen</h2>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Testimonial 1 -->
-                <div class="border p-8 rounded-2xl animate-on-scroll fade-slide-in bg-white border-stone-200/50" style="animation-delay: 0.2s;">
+                <div class="border p-8 rounded-2xl animate-on-scroll fade-slide-in bg-white border-stone-200/50"
+                    style="animation-delay: 0.2s;">
                     <div class="flex gap-1 text-orange-500 mb-4">
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
@@ -288,7 +350,9 @@
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                     </div>
-                    <p class="text-base font-serif italic mb-6 text-stone-700">"Nach nur einer Sitzung spürte ich eine tiefe innere Ruhe, die ich seit Jahren nicht mehr erlebt hatte. Die Schwingungen schienen Spannungen zu lösen, von denen ich nicht einmal wusste, dass ich sie hatte."</p>
+                    <p class="text-base font-serif italic mb-6 text-stone-700">"Nach nur einer Sitzung spürte ich eine
+                        tiefe innere Ruhe, die ich seit Jahren nicht mehr erlebt hatte. Die Schwingungen schienen
+                        Spannungen zu lösen, von denen ich nicht einmal wusste, dass ich sie hatte."</p>
                     <div class="flex gap-3 items-center">
                         <div>
                             <p class="text-sm font-medium text-stone-800">Maria S.</p>
@@ -298,7 +362,8 @@
                 </div>
 
                 <!-- Testimonial 2 -->
-                <div class="border p-8 rounded-2xl animate-on-scroll fade-slide-in bg-white border-stone-200/50" style="animation-delay: 0.3s;">
+                <div class="border p-8 rounded-2xl animate-on-scroll fade-slide-in bg-white border-stone-200/50"
+                    style="animation-delay: 0.3s;">
                     <div class="flex gap-1 text-orange-500 mb-4">
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
@@ -306,7 +371,9 @@
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                     </div>
-                    <p class="text-base font-serif italic mb-6 text-stone-700">"Ich habe viele Wellness-Therapien ausprobiert, aber nichts ist mit der Klangschalenerfahrung vergleichbar. Mein Schlaf hat sich dramatisch verbessert und meine Angst ist endlich beherrschbar."</p>
+                    <p class="text-base font-serif italic mb-6 text-stone-700">"Ich habe viele Wellness-Therapien
+                        ausprobiert, aber nichts ist mit der Klangschalenerfahrung vergleichbar. Mein Schlaf hat sich
+                        dramatisch verbessert und meine Angst ist endlich beherrschbar."</p>
                     <div class="flex items-center gap-3">
                         <div>
                             <p class="text-sm font-medium text-stone-800">Thomas K.</p>
@@ -324,36 +391,42 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
                 <!-- Left Column - Info -->
                 <div class="animate-on-scroll fade-slide-in" style="animation-delay: 0.1s;">
-                    <span class="uppercase block text-xs font-medium text-orange-700 tracking-widest mb-4">Kontakt</span>
-                    <h2 class="sm:text-4xl text-3xl text-stone-900 tracking-tight font-serif mb-6">Persönliche Anfrage</h2>
-                    <p class="leading-relaxed text-base text-stone-600 mb-8">Hast du spezielle Wünsche oder Fragen? Ich freue mich auf deine Nachricht und melde mich so schnell wie möglich bei dir.</p>
-                    
+                    <span
+                        class="uppercase block text-xs font-medium text-orange-700 tracking-widest mb-4">Kontakt</span>
+                    <h2 class="sm:text-4xl text-3xl text-stone-900 tracking-tight font-serif mb-6">Persönliche Anfrage
+                    </h2>
+                    <p class="leading-relaxed text-base text-stone-600 mb-8">Hast du spezielle Wünsche oder Fragen? Ich
+                        freue mich auf deine Nachricht und melde mich so schnell wie möglich bei dir.</p>
+
                     <div class="space-y-6">
                         <div class="flex items-start gap-4">
-                            <div class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-orange-100 border border-orange-200/50 shrink-0">
+                            <div
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-orange-100 border border-orange-200/50 shrink-0">
                                 <i data-lucide="phone" class="w-5 h-5 text-amber-700"></i>
                             </div>
                             <div>
                                 <p class="text-sm font-medium text-stone-800">Telefon</p>
-                                <p class="text-sm text-stone-600">+41 79 123 45 67</p>
+                                <p class="text-sm text-stone-600">+41 79 240 93 18</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4">
-                            <div class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-orange-100 border border-orange-200/50 shrink-0">
+                            <div
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-orange-100 border border-orange-200/50 shrink-0">
                                 <i data-lucide="mail" class="w-5 h-5 text-amber-700"></i>
                             </div>
                             <div>
                                 <p class="text-sm font-medium text-stone-800">E-Mail</p>
-                                <p class="text-sm text-stone-600">hello@klangmassage.ch</p>
+                                <p class="text-sm text-stone-600">klangschalenharmonie@gmail.com</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4">
-                            <div class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-orange-100 border border-orange-200/50 shrink-0">
+                            <div
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-orange-100 border border-orange-200/50 shrink-0">
                                 <i data-lucide="map-pin" class="w-5 h-5 text-amber-700"></i>
                             </div>
                             <div>
                                 <p class="text-sm font-medium text-stone-800">Standort</p>
-                                <p class="text-sm text-stone-600">Zürich, Schweiz</p>
+                                <p class="text-sm text-stone-600">Freudentalstrasse 4, 8235 Lohn (Schaffhausen)</p>
                             </div>
                         </div>
                     </div>
@@ -366,41 +439,58 @@
                             <!-- Name Fields -->
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div>
-                                    <label for="firstName" class="block text-sm font-medium text-stone-700 mb-2">Vorname</label>
-                                    <input type="text" id="firstName" name="firstName" placeholder="Dein Vorname" class="w-full px-4 py-3 rounded-xl border border-stone-200 bg-stone-50 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-colors" required>
+                                    <label for="firstName"
+                                        class="block text-sm font-medium text-stone-700 mb-2">Vorname</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Dein Vorname"
+                                        class="w-full px-4 py-3 rounded-xl border border-stone-200 bg-stone-50 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-colors"
+                                        required>
                                 </div>
                                 <div>
-                                    <label for="lastName" class="block text-sm font-medium text-stone-700 mb-2">Nachname</label>
-                                    <input type="text" id="lastName" name="lastName" placeholder="Dein Nachname" class="w-full px-4 py-3 rounded-xl border border-stone-200 bg-stone-50 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-colors" required>
+                                    <label for="lastName"
+                                        class="block text-sm font-medium text-stone-700 mb-2">Nachname</label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Dein Nachname"
+                                        class="w-full px-4 py-3 rounded-xl border border-stone-200 bg-stone-50 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-colors"
+                                        required>
                                 </div>
                             </div>
 
                             <!-- Email -->
                             <div>
                                 <label for="email" class="block text-sm font-medium text-stone-700 mb-2">E-Mail</label>
-                                <input type="email" id="email" name="email" placeholder="deine@email.ch" class="w-full px-4 py-3 rounded-xl border border-stone-200 bg-stone-50 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-colors" required>
+                                <input type="email" id="email" name="email" placeholder="deine@email.ch"
+                                    class="w-full px-4 py-3 rounded-xl border border-stone-200 bg-stone-50 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-colors"
+                                    required>
                             </div>
 
                             <!-- Phone -->
                             <div>
-                                <label for="phone" class="block text-sm font-medium text-stone-700 mb-2">Telefon <span class="text-stone-400 font-normal">(optional)</span></label>
-                                <input type="tel" id="phone" name="phone" placeholder="+41 79 123 45 67" class="w-full px-4 py-3 rounded-xl border border-stone-200 bg-stone-50 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-colors">
+                                <label for="phone" class="block text-sm font-medium text-stone-700 mb-2">Telefon <span
+                                        class="text-stone-400 font-normal">(optional)</span></label>
+                                <input type="tel" id="phone" name="phone" placeholder="+41 79 123 45 67"
+                                    class="w-full px-4 py-3 rounded-xl border border-stone-200 bg-stone-50 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-colors">
                             </div>
 
                             <!-- Subject -->
                             <div>
-                                <label for="subject" class="block text-sm font-medium text-stone-700 mb-2">Betreff</label>
-                                <input type="text" id="subject" name="subject" placeholder="Worum geht es?" class="w-full px-4 py-3 rounded-xl border border-stone-200 bg-stone-50 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-colors" required>
+                                <label for="subject"
+                                    class="block text-sm font-medium text-stone-700 mb-2">Betreff</label>
+                                <input type="text" id="subject" name="subject" placeholder="Worum geht es?"
+                                    class="w-full px-4 py-3 rounded-xl border border-stone-200 bg-stone-50 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-colors"
+                                    required>
                             </div>
 
                             <!-- Message -->
                             <div>
-                                <label for="message" class="block text-sm font-medium text-stone-700 mb-2">Nachricht</label>
-                                <textarea id="message" name="message" rows="5" placeholder="Beschreibe dein Anliegen..." class="w-full px-4 py-3 rounded-xl border border-stone-200 bg-stone-50 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-colors resize-none" required></textarea>
+                                <label for="message"
+                                    class="block text-sm font-medium text-stone-700 mb-2">Nachricht</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Beschreibe dein Anliegen..."
+                                    class="w-full px-4 py-3 rounded-xl border border-stone-200 bg-stone-50 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-colors resize-none"
+                                    required></textarea>
                             </div>
 
                             <!-- Submit Button -->
-                            <button type="submit" class="w-full inline-flex items-center justify-center gap-2 rounded-full h-12 text-sm font-medium transition-colors bg-orange-600 hover:bg-orange-700 text-white">
+                            <button type="submit"
+                                class="w-full inline-flex items-center justify-center gap-2 rounded-full h-12 text-sm font-medium transition-colors bg-orange-600 hover:bg-orange-700 text-white">
                                 <i data-lucide="send" class="w-4 h-4"></i>
                                 Nachricht senden
                             </button>
@@ -418,82 +508,121 @@
             <div class="text-center mb-12 sm:mb-16 animate-on-scroll fade-slide-in" style="animation-delay: 0.1s;">
                 <span class="text-xs font-medium tracking-widest uppercase mb-4 block text-orange-700">FAQ</span>
                 <h2 class="text-3xl sm:text-4xl font-serif tracking-tight text-stone-900">Häufig gestellte Fragen</h2>
-                <p class="mt-4 max-w-2xl mx-auto text-stone-600">Antworten auf die häufigsten Fragen zur Klangschalentherapie.</p>
+                <p class="mt-4 max-w-2xl mx-auto text-stone-600">Antworten auf die häufigsten Fragen zur
+                    Klangschalentherapie.</p>
             </div>
 
             <!-- FAQ Accordion -->
             <div class="space-y-4" id="faq-accordion">
                 <!-- Item 1 -->
-                <div class="faq-item rounded-2xl border border-stone-200 overflow-hidden bg-white transition-all duration-300" data-open="true">
-                    <button type="button" class="faq-btn w-full text-left px-6 sm:px-8 py-5 sm:py-6 flex items-start justify-between gap-6 hover:bg-stone-50/50 transition-colors">
-                        <span class="text-lg sm:text-xl font-medium tracking-tight text-stone-800">Was sollte ich zu einer Sitzung anziehen?</span>
-                        <span class="faq-icon inline-flex items-center justify-center rounded-full bg-stone-100 ring-1 ring-stone-200/50 text-stone-600 h-8 w-8 shrink-0">
+                <div class="faq-item rounded-2xl border border-stone-200 overflow-hidden bg-white transition-all duration-300"
+                    data-open="true">
+                    <button type="button"
+                        class="faq-btn w-full text-left px-6 sm:px-8 py-5 sm:py-6 flex items-start justify-between gap-6 hover:bg-stone-50/50 transition-colors">
+                        <span class="text-lg sm:text-xl font-medium tracking-tight text-stone-800">Was sollte ich zu
+                            einer Sitzung anziehen?</span>
+                        <span
+                            class="faq-icon inline-flex items-center justify-center rounded-full bg-stone-100 ring-1 ring-stone-200/50 text-stone-600 h-8 w-8 shrink-0">
                             <i data-lucide="plus" class="w-4 h-4"></i>
                         </span>
                     </button>
                     <div class="faq-panel">
                         <div class="px-6 sm:px-8 pb-6 sm:pb-8 pt-0">
-                            <p class="text-sm sm:text-base text-stone-600 leading-relaxed">Bequeme, locker sitzende Kleidung wird empfohlen, um maximale Entspannung zu ermöglichen. Vermeiden Sie enge Gürtel, einengende Kleidung oder schweren Schmuck. Viele Kunden bevorzugen weiche, natürliche Stoffe, die ihnen das Atmen und freie Bewegen während der Sitzung ermöglichen.</p>
+                            <p class="text-sm sm:text-base text-stone-600 leading-relaxed">Bequeme, locker sitzende
+                                Kleidung wird empfohlen, um maximale Entspannung zu ermöglichen. Vermeiden Sie enge
+                                Gürtel, einengende Kleidung oder schweren Schmuck. Viele Kunden bevorzugen weiche,
+                                natürliche Stoffe, die ihnen das Atmen und freie Bewegen während der Sitzung
+                                ermöglichen.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Item 2 -->
-                <div class="faq-item rounded-2xl border border-stone-200 overflow-hidden bg-white transition-all duration-300" data-open="false">
-                    <button type="button" class="faq-btn w-full text-left px-6 sm:px-8 py-5 sm:py-6 flex items-center justify-between gap-6 hover:bg-stone-50/50 transition-colors">
-                        <span class="text-lg sm:text-xl font-medium tracking-tight text-stone-800">Wie lange dauert eine typische Sitzung?</span>
-                        <span class="faq-icon inline-flex items-center justify-center rounded-full bg-stone-100 ring-1 ring-stone-200/50 text-stone-600 h-8 w-8 shrink-0">
+                <div class="faq-item rounded-2xl border border-stone-200 overflow-hidden bg-white transition-all duration-300"
+                    data-open="false">
+                    <button type="button"
+                        class="faq-btn w-full text-left px-6 sm:px-8 py-5 sm:py-6 flex items-center justify-between gap-6 hover:bg-stone-50/50 transition-colors">
+                        <span class="text-lg sm:text-xl font-medium tracking-tight text-stone-800">Wie lange dauert eine
+                            typische Sitzung?</span>
+                        <span
+                            class="faq-icon inline-flex items-center justify-center rounded-full bg-stone-100 ring-1 ring-stone-200/50 text-stone-600 h-8 w-8 shrink-0">
                             <i data-lucide="plus" class="w-4 h-4"></i>
                         </span>
                     </button>
                     <div class="faq-panel">
                         <div class="px-6 sm:px-8 pb-6 sm:pb-8 pt-0">
-                            <p class="text-sm sm:text-base text-stone-600 leading-relaxed">Standardsitzungen dauern 60 Minuten, inklusive einer kurzen Beratung, dem Klangbad-Erlebnis und Zeit zur Integration danach. Erweiterte 90-Minuten-Sitzungen sind auch für diejenigen verfügbar, die eine tiefere Erfahrung suchen.</p>
+                            <p class="text-sm sm:text-base text-stone-600 leading-relaxed">Standardsitzungen dauern 60
+                                Minuten, inklusive einer kurzen Beratung, dem Klangbad-Erlebnis und Zeit zur Integration
+                                danach. Erweiterte 90-Minuten-Sitzungen sind auch für diejenigen verfügbar, die eine
+                                tiefere Erfahrung suchen.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Item 3 -->
-                <div class="faq-item rounded-2xl border border-stone-200 overflow-hidden bg-white transition-all duration-300" data-open="false">
-                    <button type="button" class="faq-btn w-full text-left px-6 sm:px-8 py-5 sm:py-6 flex items-center justify-between gap-6 hover:bg-stone-50/50 transition-colors">
-                        <span class="text-lg sm:text-xl font-medium tracking-tight text-stone-800">Ist Klangschalentherapie für jeden sicher?</span>
-                        <span class="faq-icon inline-flex items-center justify-center rounded-full bg-stone-100 ring-1 ring-stone-200/50 text-stone-600 h-8 w-8 shrink-0">
+                <div class="faq-item rounded-2xl border border-stone-200 overflow-hidden bg-white transition-all duration-300"
+                    data-open="false">
+                    <button type="button"
+                        class="faq-btn w-full text-left px-6 sm:px-8 py-5 sm:py-6 flex items-center justify-between gap-6 hover:bg-stone-50/50 transition-colors">
+                        <span class="text-lg sm:text-xl font-medium tracking-tight text-stone-800">Ist
+                            Klangschalentherapie für jeden sicher?</span>
+                        <span
+                            class="faq-icon inline-flex items-center justify-center rounded-full bg-stone-100 ring-1 ring-stone-200/50 text-stone-600 h-8 w-8 shrink-0">
                             <i data-lucide="plus" class="w-4 h-4"></i>
                         </span>
                     </button>
                     <div class="faq-panel">
                         <div class="px-6 sm:px-8 pb-6 sm:pb-8 pt-0">
-                            <p class="text-sm sm:text-base text-stone-600 leading-relaxed">Klangschalentherapie ist generell sanft und für die meisten Menschen sicher. Sie ist jedoch möglicherweise nicht geeignet für Personen mit bestimmten Erkrankungen wie Epilepsie, schweren psychischen Störungen oder Herzschrittmachern. Bitte konsultieren Sie mich vor der Buchung, wenn Sie gesundheitliche Bedenken haben.</p>
+                            <p class="text-sm sm:text-base text-stone-600 leading-relaxed">Klangschalentherapie ist
+                                generell sanft und für die meisten Menschen sicher. Sie ist jedoch möglicherweise nicht
+                                geeignet für Personen mit bestimmten Erkrankungen wie Epilepsie, schweren psychischen
+                                Störungen oder Herzschrittmachern. Bitte konsultieren Sie mich vor der Buchung, wenn Sie
+                                gesundheitliche Bedenken haben.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Item 4 -->
-                <div class="faq-item rounded-2xl border border-stone-200 overflow-hidden bg-white transition-all duration-300" data-open="false">
-                    <button type="button" class="faq-btn w-full text-left px-6 sm:px-8 py-5 sm:py-6 flex items-center justify-between gap-6 hover:bg-stone-50/50 transition-colors">
-                        <span class="text-lg sm:text-xl font-medium tracking-tight text-stone-800">Wie viele Sitzungen brauche ich?</span>
-                        <span class="faq-icon inline-flex items-center justify-center rounded-full bg-stone-100 ring-1 ring-stone-200/50 text-stone-600 h-8 w-8 shrink-0">
+                <div class="faq-item rounded-2xl border border-stone-200 overflow-hidden bg-white transition-all duration-300"
+                    data-open="false">
+                    <button type="button"
+                        class="faq-btn w-full text-left px-6 sm:px-8 py-5 sm:py-6 flex items-center justify-between gap-6 hover:bg-stone-50/50 transition-colors">
+                        <span class="text-lg sm:text-xl font-medium tracking-tight text-stone-800">Wie viele Sitzungen
+                            brauche ich?</span>
+                        <span
+                            class="faq-icon inline-flex items-center justify-center rounded-full bg-stone-100 ring-1 ring-stone-200/50 text-stone-600 h-8 w-8 shrink-0">
                             <i data-lucide="plus" class="w-4 h-4"></i>
                         </span>
                     </button>
                     <div class="faq-panel">
                         <div class="px-6 sm:px-8 pb-6 sm:pb-8 pt-0">
-                            <p class="text-sm sm:text-base text-stone-600 leading-relaxed">Während viele Kunden bereits nach einer Sitzung Vorteile spüren, werden oft 4-6 Sitzungen für dauerhafte Ergebnisse empfohlen. Die Häufigkeit hängt von Ihren persönlichen Zielen ab – manche bevorzugen wöchentliche Sitzungen, andere kommen monatlich zur Pflege und Stressabbau.</p>
+                            <p class="text-sm sm:text-base text-stone-600 leading-relaxed">Während viele Kunden bereits
+                                nach einer Sitzung Vorteile spüren, werden oft 4-6 Sitzungen für dauerhafte Ergebnisse
+                                empfohlen. Die Häufigkeit hängt von Ihren persönlichen Zielen ab – manche bevorzugen
+                                wöchentliche Sitzungen, andere kommen monatlich zur Pflege und Stressabbau.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Item 5 -->
-                <div class="faq-item rounded-2xl border border-stone-200 overflow-hidden bg-white transition-all duration-300" data-open="false">
-                    <button type="button" class="faq-btn w-full text-left px-6 sm:px-8 py-5 sm:py-6 flex items-center justify-between gap-6 hover:bg-stone-50/50 transition-colors">
-                        <span class="text-lg sm:text-xl font-medium tracking-tight text-stone-800">Was kann ich während einer Sitzung erwarten?</span>
-                        <span class="faq-icon inline-flex items-center justify-center rounded-full bg-stone-100 ring-1 ring-stone-200/50 text-stone-600 h-8 w-8 shrink-0">
+                <div class="faq-item rounded-2xl border border-stone-200 overflow-hidden bg-white transition-all duration-300"
+                    data-open="false">
+                    <button type="button"
+                        class="faq-btn w-full text-left px-6 sm:px-8 py-5 sm:py-6 flex items-center justify-between gap-6 hover:bg-stone-50/50 transition-colors">
+                        <span class="text-lg sm:text-xl font-medium tracking-tight text-stone-800">Was kann ich während
+                            einer Sitzung erwarten?</span>
+                        <span
+                            class="faq-icon inline-flex items-center justify-center rounded-full bg-stone-100 ring-1 ring-stone-200/50 text-stone-600 h-8 w-8 shrink-0">
                             <i data-lucide="plus" class="w-4 h-4"></i>
                         </span>
                     </button>
                     <div class="faq-panel">
                         <div class="px-6 sm:px-8 pb-6 sm:pb-8 pt-0">
-                            <p class="text-sm sm:text-base text-stone-600 leading-relaxed">Sie liegen bequem auf einer Massageliege oder Yogamatte, während ich verschiedene Klangschalen um und manchmal auf Ihrem Körper spiele. Die meisten Menschen erleben tiefe Entspannung, manche sehen Farben oder haben lebhafte Bilder, und viele spüren ein Kribbeln, wenn die Schwingungen durch sie hindurchgehen.</p>
+                            <p class="text-sm sm:text-base text-stone-600 leading-relaxed">Sie liegen bequem auf einer
+                                Massageliege oder Yogamatte, während ich verschiedene Klangschalen um und manchmal auf
+                                Ihrem Körper spiele. Die meisten Menschen erleben tiefe Entspannung, manche sehen Farben
+                                oder haben lebhafte Bilder, und viele spüren ein Kribbeln, wenn die Schwingungen durch
+                                sie hindurchgehen.</p>
                         </div>
                     </div>
                 </div>
@@ -503,23 +632,21 @@
 
     <!-- Footer -->
     <footer class="text-stone-300 bg-stone-900 pt-20 pr-6 pb-12 pl-6 relative">
-        <div class="max-w-7xl mx-auto relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div class="max-w-7xl mx-auto relative z-10 grid grid-cols-1 md:grid-cols-3 gap-12">
             <!-- Brand -->
             <div class="space-y-6">
-                <div class="flex items-center gap-2 text-orange-500">
-                    <i data-lucide="disc-3" class="w-6 h-6"></i>
-                    <span class="text-xl tracking-tight font-serif text-white">Klangmassage</span>
-                </div>
+                <span class="text-xl tracking-tight font-serif text-white">Klangschalen Harmonie</span>
                 <p class="leading-relaxed text-sm font-light text-stone-500 max-w-xs">
                     Authentische tibetische Klangschalentherapie für ganzheitliche Heilung und tiefe Entspannung.
                 </p>
                 <div class="flex gap-4">
-                    <a href="#" class="transition-colors hover:text-white" aria-label="Instagram">
+                    <a href="https://www.instagram.com/klangschalenharmonie/" target="_blank" rel="noopener noreferrer"
+                        class="transition-colors hover:text-white" aria-label="Instagram">
                         <i data-lucide="instagram" class="w-5 h-5"></i>
                     </a>
-                    <a href="#" class="transition-colors hover:text-white" aria-label="Facebook">
+                    <!-- <a href="#" class="transition-colors hover:text-white" aria-label="Facebook">
                         <i data-lucide="facebook" class="w-5 h-5"></i>
-                    </a>
+                    </a> -->
                 </div>
             </div>
 
@@ -540,41 +667,32 @@
                 <ul class="space-y-3 text-sm font-light">
                     <li class="flex gap-2 items-start">
                         <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5"></i>
-                        <span>Zürich, Schweiz</span>
+                        <span>Freudentalstrasse 4<br>8235 Lohn (Schaffhausen)</span>
                     </li>
                     <li class="flex gap-2 items-center">
                         <i data-lucide="phone" class="w-4 h-4 shrink-0"></i>
-                        <span>+41 79 123 45 67</span>
+                        <span>+41 79 240 93 18</span>
                     </li>
                     <li class="flex gap-2 items-center">
                         <i data-lucide="mail" class="w-4 h-4 shrink-0"></i>
-                        <span>hello@klangmassage.ch</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Hours -->
-            <div>
-                <h4 class="font-medium mb-6 text-sm text-white">Öffnungszeiten</h4>
-                <ul class="space-y-3 text-sm font-light">
-                    <li class="flex justify-between">
-                        <span>Montag - Freitag</span>
-                        <span class="text-stone-400">9:00 - 19:00</span>
-                    </li>
-                    <li class="flex justify-between">
-                        <span>Samstag</span>
-                        <span class="text-stone-400">10:00 - 17:00</span>
+                        <span>klangschalenharmonie@gmail.com</span>
                     </li>
                 </ul>
             </div>
         </div>
 
         <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-stone-800">
-            <p class="text-sm text-stone-500 text-center">© 2024 Klangmassage. Alle Rechte vorbehalten.</p>
+            <div class="flex justify-center gap-6 text-sm mb-4">
+                <a href="impressum.html" class="text-stone-400 hover:text-orange-400 transition-colors">Impressum</a>
+                <a href="datenschutz.html"
+                    class="text-stone-400 hover:text-orange-400 transition-colors">Datenschutz</a>
+            </div>
+            <p class="text-sm text-stone-500 text-center">© 2026 Klangschalen Harmonie. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
 
     <!-- JavaScript -->
     <script src="js/main.js"></script>
 </body>
+
 </html>
