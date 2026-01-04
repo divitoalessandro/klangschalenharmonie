@@ -1,63 +1,109 @@
-# Klangschalenmassage Website
+# Klangschalen Harmonie
 
-A beautiful, responsive website for Roberta's Singing Bowl Therapy practice in Zürich, Switzerland.
+Website für Klangschalen Harmonie von Roberta Di Vito - Klangschalenmassagen in Schaffhausen, Schweiz.
 
 ## 🌿 Features
 
-- **Responsive Design** - Works on all devices
-- **Smooth Animations** - Fade-in effects on scroll
-- **Interactive FAQ** - Accordion-style FAQ section
-- **Contact Form** - Ready for backend integration
-- **German Content** - Fully localized for Swiss German market
+- **Responsive Design** - Optimiert für alle Geräte (Desktop, Tablet, Mobile)
+- **Smooth Animations** - Fade-in Effekte beim Scrollen
+- **Interaktive Vorteile-Section** - Expandierbare Cards mit Accordion-Verhalten
+- **FAQ Accordion** - Interaktive häufig gestellte Fragen
+- **Kontaktformular** - Integriert mit HubSpot CRM
+- **Online-Terminbuchung** - Integriert mit Calendly
+- **Deutsche Inhalte** - Vollständig für den Schweizer Markt lokalisiert
 
-## 📁 Project Structure
+## 📁 Projektstruktur
 
 ```
 klangschalentherapie/
-├── index.html          # Main HTML file
+├── index.html              # Hauptseite
+├── impressum.html          # Impressum
+├── datenschutz.html        # Datenschutzerklärung
 ├── css/
-│   └── styles.css      # Custom styles and animations
+│   └── styles.css          # Custom Styles und Animationen
 ├── js/
-│   └── main.js         # Interactive functionality
-└── README.md           # This file
+│   └── main.js             # JavaScript Funktionalität
+├── favicon/                # Favicon Dateien
+│   ├── favicon-16x16.png
+│   ├── favicon-32x32.png
+│   ├── favicon-48x48.png
+│   ├── favicon-96x96.png
+│   └── apple-touch-icon.png
+├── .github/
+│   └── workflows/
+│       └── deploy.yml      # GitHub Actions für FTP Deployment
+└── README.md
 ```
 
 ## 🚀 Getting Started
 
-1. Clone this repository
-2. Open `index.html` in your browser
+1. Repository klonen
+2. `index.html` im Browser öffnen
 
-No build process required - this is a static website using:
+Kein Build-Prozess erforderlich - statische Website mit:
 - [Tailwind CSS](https://tailwindcss.com/) via CDN
-- [Lucide Icons](https://lucide.dev/) for icons
+- [Lucide Icons](https://lucide.dev/) für Icons
 - [Google Fonts](https://fonts.google.com/) (Inter & Playfair Display)
 
-## 📝 Customization
+## 🔧 Externe Dienste
 
-### Update Contact Information
-Edit the contact details in `index.html`:
-- Phone: `+41 79 123 45 67`
-- Email: `hello@klangmassage.ch`
-- Location: `Zürich, Schweiz`
+### HubSpot (Kontaktformular)
+Das Kontaktformular sendet Daten an HubSpot CRM. Konfiguration erfolgt in `js/main.js`.
 
-### Update Images
-Replace the image URLs in `index.html`:
-- Logo in navigation
-- Hero background image
-- About section profile photo
+### Calendly (Terminbuchung)
+Die Buchungslinks verweisen auf Calendly. Links können in `index.html` angepasst werden.
 
-### Update Pricing
-Modify the pricing section in `index.html`:
-- Single session: CHF 85
-- 4-session package: CHF 299
+### Supabase (Medien-Hosting)
+Bilder werden über Supabase Storage gehostet.
 
-## 📧 Contact Form
+## 🚢 Deployment
 
-The contact form currently shows an alert on submission. To enable actual form submissions:
+### Automatisches Deployment (GitHub Actions)
 
-1. **Option A**: Use a service like [Formspree](https://formspree.io/) or [Netlify Forms](https://www.netlify.com/products/forms/)
-2. **Option B**: Connect to your own backend API
+Bei jedem Push auf den `main` Branch wird automatisch via FTP deployed.
 
-## 📄 License
+**Benötigte GitHub Secrets:**
+- `FTP_SERVER` - FTP Server Adresse
+- `FTP_USERNAME` - FTP Benutzername
+- `FTP_PASSWORD` - FTP Passwort
 
-© 2024 Klangmassage. All rights reserved.
+### Manuelles Deployment
+
+Alle Dateien per FTP in das `public_html` Verzeichnis hochladen.
+
+## 📝 Anpassungen
+
+### Kontaktinformationen
+In `index.html` und `datenschutz.html`:
+- Telefonnummer
+- E-Mail Adresse
+- Standort/Adresse
+
+### Preise
+In `index.html` im Pricing-Bereich:
+- Erste Klangreise: CHF 60 (45 Min)
+- Intensive Klangreise: CHF 120 (60 Min)
+
+### Bilder
+Bild-URLs können in `index.html` angepasst werden:
+- Logo (in `css/styles.css`)
+- Hero Hintergrundbild
+- About Section Profilbild
+
+## 📄 Seiten
+
+| Seite | Beschreibung |
+|-------|--------------|
+| `index.html` | Hauptseite mit allen Sections |
+| `impressum.html` | Rechtliche Informationen |
+| `datenschutz.html` | Datenschutzerklärung (DSGVO-konform) |
+
+## 🎨 Design System
+
+- **Farbschema**: Stone/Orange (Tailwind CSS)
+- **Schriften**: Playfair Display (Serif), Inter (Sans-serif)
+- **Icons**: Lucide Icons
+
+## 📄 Lizenz
+
+© 2026 Klangschalen Harmonie. Alle Rechte vorbehalten.
