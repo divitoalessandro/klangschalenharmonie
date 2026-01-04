@@ -1,6 +1,32 @@
 /**
  * Klangschalenmassage - Main JavaScript
+ * With GA4 Event Tracking
  */
+
+// Initialize dataLayer for GTM/GA4
+window.dataLayer = window.dataLayer || [];
+
+// Tracking flags to prevent duplicate events
+const trackingFlags = {
+    formStarted: false,
+    scroll50: false,
+    scroll75: false,
+    scroll100: false,
+    viewPricing: false,
+    viewTestimonials: false,
+    viewContact: false
+};
+
+/**
+ * Helper function to push events to dataLayer
+ */
+function pushEvent(eventName, params = {}) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        'event': eventName,
+        ...params
+    });
+}
 
 document.addEventListener('DOMContentLoaded', function () {
     lucide.createIcons();
@@ -11,6 +37,12 @@ document.addEventListener('DOMContentLoaded', function () {
     initSmoothScroll();
     initContactForm();
     initPhoneReveal();
+
+    // GA4 Event Tracking Initializations
+    initBookingTracking();
+    initScrollDepthTracking();
+    initSectionViewTracking();
+    initContactClickTracking();
 });
 
 /**
@@ -26,6 +58,9 @@ function initPhoneReveal() {
                 phoneSpan.textContent = fullNumber;
                 phoneSpan.classList.remove('phone-hidden');
                 this.remove();
+
+                // GA4: Track phone reveal
+                pushEvent('phone_reveal');
             }
         });
     });
@@ -57,8 +92,17 @@ function initFAQAccordion() {
     document.querySelectorAll('.faq-item').forEach(item => {
         item.querySelector('.faq-btn')?.addEventListener('click', () => {
             const isOpen = item.getAttribute('data-open') === 'true';
+            const questionEl = item.querySelector('.faq-btn span');
+            const questionText = questionEl ? questionEl.textContent.trim() : 'Unknown';
+
             document.querySelectorAll('.faq-item').forEach(i => i.setAttribute('data-open', 'false'));
             item.setAttribute('data-open', isOpen ? 'false' : 'true');
+
+            // GA4: Track FAQ click
+            pushEvent('faq_click', {
+                'question': questionText,
+                'action': isOpen ? 'collapse' : 'expand'
+            });
         });
     });
 }
@@ -108,6 +152,17 @@ function initContactForm() {
     const form = document.getElementById('contact-form');
 
     if (!form) return;
+
+    // GA4: Track form start (first field focus)
+    const formFields = form.querySelectorAll('input, textarea');
+    formFields.forEach(field => {
+        field.addEventListener('focus', function () {
+            if (!trackingFlags.formStarted) {
+                trackingFlags.formStarted = true;
+                pushEvent('form_start');
+            }
+        }, { once: true });
+    });
 
     form.addEventListener('submit', async function (e) {
         e.preventDefault();
@@ -164,6 +219,11 @@ function initContactForm() {
             });
 
             if (response.ok) {
+                // GA4: Track form submit success
+                pushEvent('form_submit', {
+                    'form_name': 'contact_form'
+                });
+
                 // Hide all form fields and show success message
                 form.innerHTML = `
                     <div class="flex flex-col items-center justify-center py-12 text-center">
@@ -202,5 +262,120 @@ function initContactForm() {
                 lucide.createIcons();
             }, 3000);
         }
+    });
+}
+
+/**
+ * GA4: Track Calendly booking button clicks
+ */
+function initBookingTracking() {
+    document.querySelectorAll('a[href*="calendly.com"]').forEach(link => {
+        link.addEventListener('click', function () {
+            const href = this.getAttribute('href') || '';
+            const isSchnupper = href.includes('schnuppersitzung');
+            const bookingType = isSchnupper ? 'schnuppersitzung' : 'einzelsitzung';
+            const value = isSchnupper ? 60 : 120;
+
+            // Determine button location
+            let buttonLocation = 'unknown';
+            const section = this.closest('section');
+            if (section) {
+                const sectionId = section.getAttribute('id');
+                if (sectionId) {
+                    buttonLocation = sectionId;
+                }
+            }
+            if (this.closest('header')) {
+                buttonLocation = 'hero';
+            }
+
+            pushEvent('booking_click', {
+                'booking_type': bookingType,
+                'button_location': buttonLocation,
+                'value': value
+            });
+        });
+    });
+}
+
+/**
+ * GA4: Track scroll depth (50%, 75%, 100%)
+ */
+function initScrollDepthTracking() {
+    window.addEventListener('scroll', function () {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / docHeight) * 100;
+
+        if (scrollPercent >= 50 && !trackingFlags.scroll50) {
+            trackingFlags.scroll50 = true;
+            pushEvent('scroll_50');
+        }
+
+        if (scrollPercent >= 75 && !trackingFlags.scroll75) {
+            trackingFlags.scroll75 = true;
+            pushEvent('scroll_75');
+        }
+
+        if (scrollPercent >= 95 && !trackingFlags.scroll100) {
+            trackingFlags.scroll100 = true;
+            pushEvent('scroll_100');
+        }
+    }, { passive: true });
+}
+
+/**
+ * GA4: Track when key sections enter viewport
+ */
+function initSectionViewTracking() {
+    const sectionMap = {
+        'pricing': 'viewPricing',
+        'testimonials': 'viewTestimonials',
+        'contact': 'viewContact'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const sectionId = entry.target.getAttribute('id');
+                const flagKey = sectionMap[sectionId];
+
+                if (flagKey && !trackingFlags[flagKey]) {
+                    trackingFlags[flagKey] = true;
+                    pushEvent('view_' + sectionId);
+                }
+            }
+        });
+    }, { threshold: 0.3 });
+
+    // Observe key sections
+    Object.keys(sectionMap).forEach(sectionId => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            observer.observe(section);
+        }
+    });
+}
+
+/**
+ * GA4: Track phone and email link clicks
+ */
+function initContactClickTracking() {
+    // Track phone clicks
+    document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+        link.addEventListener('click', function () {
+            pushEvent('phone_click', {
+                'phone_number': this.getAttribute('href').replace('tel:', '')
+            });
+        });
+    });
+
+    // Track email clicks
+    document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+        link.addEventListener('click', function () {
+            pushEvent('email_click', {
+                'email_address': this.getAttribute('href').replace('mailto:', '')
+            });
+        });
     });
 }
