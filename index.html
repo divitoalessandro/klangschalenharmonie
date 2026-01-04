@@ -36,9 +36,8 @@
             <div class="hidden lg:flex items-center gap-6 text-sm font-medium text-stone-600">
                 <a href="#benefits" class="transition-colors hover:text-orange-700">Vorteile</a>
                 <a href="#about" class="transition-colors hover:text-orange-700">Über mich</a>
-                <a href="#impact" class="transition-colors hover:text-orange-700">Wirkung</a>
                 <a href="#pricing" class="transition-colors hover:text-orange-700">Preise</a>
-                <a href="#testimonials" class="transition-colors hover:text-orange-700">Stories</a>
+                <a href="#testimonials" class="transition-colors hover:text-orange-700">Erfahrungen</a>
                 <a href="#contact" class="transition-colors hover:text-orange-700">Kontakt</a>
             </div>
             <div class="hidden lg:block">
@@ -60,9 +59,8 @@
             class="hidden absolute top-20 left-0 w-full border-b p-6 flex flex-col gap-4 lg:hidden bg-stone-50 border-stone-200">
             <a href="#benefits" class="text-base text-stone-700">Vorteile</a>
             <a href="#about" class="text-base text-stone-700">Über mich</a>
-            <a href="#impact" class="text-base text-stone-700">Wirkung</a>
             <a href="#pricing" class="text-base text-stone-700">Preise</a>
-            <a href="#testimonials" class="text-base text-stone-700">Stories</a>
+            <a href="#testimonials" class="text-base text-stone-700">Erfahrungen</a>
             <a href="#contact" class="text-base text-stone-700">Kontakt</a>
             <a href="#faq" class="text-base text-stone-700">FAQ</a>
             <a href="#pricing" class="text-base font-medium text-orange-700">Termin buchen</a>
@@ -83,7 +81,7 @@
         <div
             class="flex flex-col min-h-screen z-10 h-full max-w-7xl mr-auto ml-auto pt-24 pr-6 pl-6 relative justify-center">
             <div class="max-w-2xl">
-                <h1 class="leading-tight animate-in md:text-7xl lg:text-6xl text-5xl text-white font-serif mb-8"
+                <h1 class="leading-tight animate-in md:text-7xl lg:text-6xl text-4xl text-white font-serif mb-8"
                     style="animation-delay: 0.2s;">
                     Klangschalenmassage für dein <span class="font-normal italic text-orange-400">inneres
                         Gleichgewicht</span>
@@ -103,46 +101,136 @@
 
     <!-- Benefits Section -->
     <section class="bg-white pt-24 pb-24 relative" id="benefits">
-        <div class="max-w-7xl mr-auto ml-auto pr-6 pl-6">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Header -->
             <div class="mx-auto max-w-3xl text-center mb-16">
                 <h2 class="sm:text-4xl animate-on-scroll fade-slide-in text-3xl text-stone-900 tracking-tight font-serif"
                     style="animation-delay: 0.1s;">Vorteile einer Klangschalenmassage</h2>
                 <p class="animate-on-scroll fade-slide-in text-stone-600 mt-4" style="animation-delay: 0.2s;">Finde
                     heraus, wie die antike Klangschalenmassage zu deinem Wohlbefinden beitragen kann.</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="relative overflow-hidden rounded-2xl border p-8 animate-on-scroll fade-slide-in bg-stone-50 border-stone-200/50"
-                    style="animation-delay: 0.1s;">
-                    <div
-                        class="inline-flex items-center justify-center w-12 h-12 rounded-full border mb-6 bg-orange-100 border-orange-200/50">
-                        <i data-lucide="brain" class="w-6 h-6 text-amber-700"></i>
+
+            <!-- Interactive Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 items-start" id="impact-cards">
+                <!-- Card 1: Sanfter Stressabbau -->
+                <div class="impact-card rounded-2xl border border-stone-200/50 bg-white transition-all duration-300 hover:bg-stone-50 cursor-pointer animate-on-scroll fade-slide-in"
+                    data-open="false" style="animation-delay: 0.1s;">
+                    <button type="button" role="button" aria-expanded="false"
+                        class="impact-card-btn w-full text-left p-6 sm:p-8 flex items-center justify-between gap-4">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="impact-card-icon inline-flex items-center justify-center w-12 h-12 rounded-full bg-stone-100 border border-stone-200/50 transition-colors duration-300">
+                                <i data-lucide="wind" class="w-6 h-6 text-stone-600 transition-colors duration-300"></i>
+                            </div>
+                            <h3 class="text-xl font-medium text-stone-800 tracking-tight font-serif">Sanfter Stressabbau
+                            </h3>
+                        </div>
+                        <span
+                            class="impact-card-toggle inline-flex items-center justify-center w-8 h-8 rounded-full text-orange-700 shrink-0 transition-transform duration-200">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </span>
+                    </button>
+                    <div class="impact-card-panel">
+                        <div class="px-6 sm:px-8 pb-6 sm:pb-8 pt-0">
+                            <p class="text-base text-stone-600 leading-relaxed mb-4">Klangschalenmassagen helfen, tiefen
+                                Stress loszulassen, indem sie den Körper mit sanften, rhythmischen Schwingungen in einen
+                                Zustand tiefer Entspannung versetzen.</p>
+                            <p class="text-base text-stone-600 leading-relaxed">Die beruhigenden Klänge fördern die
+                                mentale Entlastung und ermöglichen es dem Geist, zur Ruhe zu kommen. So entsteht ein
+                                Raum, in dem sich Körper und Geist erholen und entspannen dürfen.</p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-medium text-stone-800 tracking-tight mb-3">Tiefe Entspannung</h3>
-                    <p class="leading-relaxed text-sm text-stone-600">Die resonanten Töne von Klangschalen versetzen den
-                        Geist in einen meditativen Zustand, reduzieren Stresshormone und fördern tiefe geistige Ruhe und
-                        Klarheit.</p>
                 </div>
-                <div class="relative overflow-hidden rounded-2xl border p-8 animate-on-scroll fade-slide-in bg-stone-50 border-stone-200/50"
-                    style="animation-delay: 0.2s;">
-                    <div
-                        class="inline-flex items-center justify-center w-12 h-12 rounded-full border mb-6 bg-orange-100 border-orange-200/50">
-                        <i data-lucide="heart-pulse" class="w-6 h-6 text-amber-700"></i>
+
+                <!-- Card 2: Natürliche Selbstregulation -->
+                <div class="impact-card rounded-2xl border border-stone-200/50 bg-white transition-all duration-300 hover:bg-stone-50 cursor-pointer animate-on-scroll fade-slide-in"
+                    data-open="false" style="animation-delay: 0.2s;">
+                    <button type="button" role="button" aria-expanded="false"
+                        class="impact-card-btn w-full text-left p-6 sm:p-8 flex items-center justify-between gap-4">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="impact-card-icon inline-flex items-center justify-center w-12 h-12 rounded-full bg-stone-100 border border-stone-200/50 transition-colors duration-300">
+                                <i data-lucide="heart-pulse"
+                                    class="w-6 h-6 text-stone-600 transition-colors duration-300"></i>
+                            </div>
+                            <h3 class="text-xl font-medium text-stone-800 tracking-tight font-serif">Natürliche
+                                Selbstregulation</h3>
+                        </div>
+                        <span
+                            class="impact-card-toggle inline-flex items-center justify-center w-8 h-8 rounded-full text-orange-700 shrink-0 transition-transform duration-200">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </span>
+                    </button>
+                    <div class="impact-card-panel">
+                        <div class="px-6 sm:px-8 pb-6 sm:pb-8 pt-0">
+                            <p class="text-base text-stone-600 leading-relaxed mb-4">Die sanften Vibrationen der
+                                Klangschalen aktivieren innere Ressourcen und unterstützen das Lösen energetischer
+                                Spannungen.</p>
+                            <p class="text-base text-stone-600 leading-relaxed">Durch tiefe, resonante Töne wird der
+                                Körper ganzheitlich angesprochen – das hilft, körperliche und emotionale Anspannung
+                                sanft abzubauen und die innere Balance zu stärken.</p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-medium text-stone-800 tracking-tight mb-3">Energiefluss aktivieren</h3>
-                    <p class="leading-relaxed text-sm text-stone-600">Schallschwingungen dringen in jede Zelle ein,
-                        verbessern die Durchblutung, lindern Schmerzen und unterstützen die natürlichen Heilungsprozesse
-                        des Körpers auf zellulärer Ebene.</p>
                 </div>
-                <div class="overflow-hidden animate-on-scroll fade-slide-in bg-stone-50 border-stone-200/50 border rounded-2xl pt-8 pr-8 pb-8 pl-8 relative"
-                    style="animation-delay: 0.3s;">
-                    <div
-                        class="inline-flex items-center justify-center w-12 h-12 rounded-full border mb-6 bg-orange-100 border-orange-200/50">
-                        <i data-lucide="sparkles" class="w-6 h-6 text-amber-700"></i>
+
+                <!-- Card 3: Energiefluss fördern -->
+                <div class="impact-card rounded-2xl border border-stone-200/50 bg-white transition-all duration-300 hover:bg-stone-50 cursor-pointer animate-on-scroll fade-slide-in"
+                    data-open="false" style="animation-delay: 0.3s;">
+                    <button type="button" role="button" aria-expanded="false"
+                        class="impact-card-btn w-full text-left p-6 sm:p-8 flex items-center justify-between gap-4">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="impact-card-icon inline-flex items-center justify-center w-12 h-12 rounded-full bg-stone-100 border border-stone-200/50 transition-colors duration-300">
+                                <i data-lucide="zap" class="w-6 h-6 text-stone-600 transition-colors duration-300"></i>
+                            </div>
+                            <h3 class="text-xl font-medium text-stone-800 tracking-tight font-serif">Energiefluss
+                                fördern</h3>
+                        </div>
+                        <span
+                            class="impact-card-toggle inline-flex items-center justify-center w-8 h-8 rounded-full text-orange-700 shrink-0 transition-transform duration-200">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </span>
+                    </button>
+                    <div class="impact-card-panel">
+                        <div class="px-6 sm:px-8 pb-6 sm:pb-8 pt-0">
+                            <p class="text-base text-stone-600 leading-relaxed mb-4">Klangmassagen unterstützen den
+                                freien Fluss der Lebensenergie, indem sie das Gleichgewicht zwischen Körper, Geist und
+                                Seele fördern.</p>
+                            <p class="text-base text-stone-600 leading-relaxed">Die harmonischen Schwingungen helfen,
+                                energetische Ungleichgewichte auszugleichen – für mehr Wohlbefinden, Leichtigkeit und
+                                innere Harmonie.</p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-medium text-stone-800 tracking-tight mb-3">Energiehaushalt ausgleichen</h3>
-                    <p class="leading-relaxed text-sm text-stone-600">Stellen Sie die Harmonie Ihrer Chakren und
-                        Energiezentren wieder her. Die Frequenzen der Klangschalen helfen dabei, Blockaden zu lösen und
-                        den freien Fluss der Lebenskraft zu fördern.</p>
+                </div>
+
+                <!-- Card 4: Emotionale Ausgeglichenheit -->
+                <div class="impact-card rounded-2xl border border-stone-200/50 bg-white transition-all duration-300 hover:bg-stone-50 cursor-pointer animate-on-scroll fade-slide-in"
+                    data-open="false" style="animation-delay: 0.4s;">
+                    <button type="button" role="button" aria-expanded="false"
+                        class="impact-card-btn w-full text-left p-6 sm:p-8 flex items-center justify-between gap-4">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="impact-card-icon inline-flex items-center justify-center w-12 h-12 rounded-full bg-stone-100 border border-stone-200/50 transition-colors duration-300">
+                                <i data-lucide="smile"
+                                    class="w-6 h-6 text-stone-600 transition-colors duration-300"></i>
+                            </div>
+                            <h3 class="text-xl font-medium text-stone-800 tracking-tight font-serif">Emotionale
+                                Ausgeglichenheit</h3>
+                        </div>
+                        <span
+                            class="impact-card-toggle inline-flex items-center justify-center w-8 h-8 rounded-full text-orange-700 shrink-0 transition-transform duration-200">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </span>
+                    </button>
+                    <div class="impact-card-panel">
+                        <div class="px-6 sm:px-8 pb-6 sm:pb-8 pt-0">
+                            <p class="text-base text-stone-600 leading-relaxed mb-4">Klangmassagen schaffen Raum für
+                                emotionale Klarheit, indem sie helfen, tief sitzende Spannungen sanft zu lösen.</p>
+                            <p class="text-base text-stone-600 leading-relaxed">Die Schwingungen erzeugen eine
+                                beruhigende Atmosphäre, in der sich belastende Gefühle lösen und positive, harmonische
+                                Emotionen entfalten können. So entsteht innere Ruhe und emotionale Stabilität.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -166,43 +254,22 @@
                     <h2 class="sm:text-4xl text-3xl text-stone-900 tracking-tight font-serif mb-6">Hallo, ich bin <span
                             class="italic text-orange-700">Roberta</span></h2>
                     <p class="leading-relaxed text-base text-stone-600 mb-6">Es gab eine Zeit, in der ich mich nicht
-                        mehr wohlgefühlt habe – eine innere Unzufriedenheit machte sich breit. Auf der Suche nach einer
-                        Lösung bin ich auf die Kraft der Klangschalen gestossen. Die sanften Schwingungen und
-                        harmonischen Klänge haben mich so tief berührt, dass ich meine innere Ruhe wiederfinden konnte.
-                    </p>
-                    <p class="leading-relaxed text-base text-stone-600 mb-8">Diese Erfahrung hat mich so fasziniert,
-                        dass ich begann, mich intensiv mit der Arbeit mit Klangschalen auseinanderzusetzen. Seither habe
-                        ich fünf Weiterbildungen in diesem Bereich absolviert und befinde mich aktuell in der Ausbildung
-                        zur Klangschalen-Therapeutin.</p>
+                        mehr wohlgefühlt habe. Eine innere Unzufriedenheit machte sich breit.</p>
+                    <p class="leading-relaxed text-base text-stone-600 mb-8">Auf der Suche nach einer Lösung bin ich auf
+                        die Kraft der Klangschalen gestossen. Die sanften Schwingungen und harmonischen Klänge haben
+                        mich so tief berührt, dass ich meine innere Ruhe wiederfinden konnte.</p>
+                    <p class="leading-relaxed text-base text-stone-600 mb-8">Diese Erfahrung hat mich fasziniert. Ich
+                        begann, mich intensiv mit der Arbeit mit Klangschalen auseinanderzusetzen. Seither habe ich fünf
+                        Weiterbildungen in diesem Bereich absolviert. Aktuell befinde ich mich in der Ausbildung zur
+                        Klangschalen-Therapeutin.</p>
                     <p class="leading-relaxed text-base text-stone-600 mb-8">Heute ist es meine Herzensangelegenheit,
-                        anderen Menschen mit der wohltuenden Wirkung der Klangschalen zu mehr Entspannung, Gelassenheit
-                        und innerer Harmonie zu verhelfen. Gerade in unserer oft hektischen und lauten Welt geraten
-                        Körper und Seele schnell aus dem Gleichgewicht. In meinen Sitzungen lade ich dich ein, die
-                        heilsame Kraft der Klänge selbst zu erleben – für mehr Ausgeglichenheit und Wohlbefinden in
-                        deinem Alltag.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Impact Section -->
-    <section class="bg-white pt-24 pb-24" id="impact">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="pt-8 pb-8">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-                    <div class="lg:col-span-4 animate-on-scroll fade-slide-in" style="animation-delay: 0.1s;">
-                        <h2 class="sm:text-4xl text-3xl font-medium text-stone-900 tracking-tight font-serif">Wie wirken
-                            Klangmassagen?</h2>
-                    </div>
-                    <div class="lg:col-span-8 animate-on-scroll fade-slide-in" style="animation-delay: 0.2s;">
-                        <p
-                            class="sm:text-3xl lg:text-4xl leading-tight text-2xl font-medium text-stone-800 tracking-tight font-serif mb-8">
-                            Die Wissenschaft hinter den Klängen</p>
-                        <p class="leading-relaxed text-lg text-stone-600">Forschungen haben gezeigt, dass die
-                            Schwingungen von Klangschalen den Blutdruck senken, die Herzfrequenz verlangsamen und den
-                            Cortisolspiegel reduzieren können. Die Schallwellen erzeugen eine Vibrationsmassage, die
-                            jede Zelle Ihres Körpers erreicht und tiefe Heilung von innen heraus fördert.</p>
-                    </div>
+                        anderen Menschen zu helfen. Mit der wohltuenden Wirkung der Klangschalen möchte ich zu mehr
+                        Entspannung, Gelassenheit und innerer Harmonie verhelfen.</p>
+                    <p class="leading-relaxed text-base text-stone-600 mb-8">Gerade in unserer oft hektischen und lauten
+                        Welt geraten Körper und Seele schnell aus dem Gleichgewicht. Mit meinen Klangreisen lade ich
+                        dich ein, die heilsame Kraft der Klänge selbst zu erleben. Für mehr Ausgeglichenheit und
+                        Wohlbefinden
+                        in deinem Alltag.</p>
                 </div>
             </div>
         </div>
@@ -215,8 +282,8 @@
                 <span class="uppercase block text-xs font-medium text-orange-700 tracking-widest mb-4">Preise</span>
                 <h2 class="sm:text-4xl text-3xl text-stone-900 tracking-tight font-serif">Welche Klangmassagen biete ich
                     an?</h2>
-                <p class="text-stone-600 max-w-2xl mt-4 mr-auto ml-auto">Von der Einzelsitzung für Neugierige bis zur
-                    Mehrfachbuchung für bereits Begeisterte.</p>
+                <p class="text-stone-600 max-w-2xl mt-4 mr-auto ml-auto">Tauche ein in die Welt der Klänge und finde zu
+                    mehr innerer Ruhe.</p>
             </div>
 
             <div class="relative overflow-hidden rounded-3xl border shadow-xl border-stone-200 bg-white">
@@ -225,18 +292,15 @@
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-0">
                     <!-- Left Info -->
-                    <div class="p-6 sm:p-10 lg:col-span-1 animate-on-scroll fade-slide-in"
+                    <div class="p-6 sm:p-10 lg:pr-12 lg:col-span-1 animate-on-scroll fade-slide-in"
                         style="animation-delay: 0.2s;">
-                        <span
-                            class="inline-flex items-center gap-2 text-xs text-stone-600 bg-stone-50 border-stone-200 border rounded-full pt-1.5 pr-3 pb-1.5 pl-3">
-                            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
-                            KLANGSITZUNGEN
-                        </span>
-                        <h2 class="mt-4 text-3xl sm:text-4xl tracking-tight font-serif text-stone-900">Klangbad Erlebnis
+                        <h2 class="text-2xl sm:text-3xl tracking-tight font-serif text-stone-900">Wähle deine
+                            Klangreise
                         </h2>
                         <p class="mt-3 max-w-sm text-stone-600">
-                            Jede Sitzung wird auf Ihre individuellen Bedürfnisse abgestimmt und kombiniert traditionelle
-                            Techniken mit intuitiver Heilung.
+                            Jede Sitzung wird auf deine individuellen Bedürfnisse abgestimmt und kombiniert
+                            traditionelle
+                            Techniken.
                         </p>
 
                         <ul class="mt-6 space-y-3 text-sm text-stone-600">
@@ -254,7 +318,7 @@
                             </li>
                             <li class="flex items-center gap-2">
                                 <i data-lucide="heart" class="w-4 h-4 text-rose-600"></i>
-                                Persönlicher Ansatz
+                                Ansatz aus fundierter Ausbildung
                             </li>
                         </ul>
                     </div>
@@ -262,64 +326,61 @@
                     <!-- Plans -->
                     <div
                         class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 border-t lg:border-l lg:border-t-0 border-stone-200">
-                        <!-- Single Session -->
+                        <!-- Schnuppersitzung -->
                         <div class="p-6 sm:p-10 border-b md:border-b-0 md:border-r animate-on-scroll fade-slide-in border-stone-200"
                             style="animation-delay: 0.3s;">
                             <div class="flex items-center justify-between">
-                                <h3 class="text-xl tracking-tight font-medium text-stone-800">Einzelsitzung</h3>
+                                <h3 class="text-xl tracking-tight font-medium text-stone-800">Erste Klangreise</h3>
                                 <span
                                     class="inline-flex items-center gap-1 rounded-lg border px-2 py-1 text-xs text-stone-500 border-stone-200 bg-stone-50">
-                                    Zum Kennenlernen
+                                    Für erstes Kennenlernen
                                 </span>
                             </div>
                             <div class="mt-3 flex items-end gap-1">
-                                <span class="text-4xl tracking-tight font-medium text-stone-900">CHF 85</span>
-                                <span class="text-stone-500 mb-1 text-sm">/Sitzung</span>
+                                <span class="text-4xl tracking-tight font-medium text-stone-900">CHF 60</span>
+                            </div>
+                            <ul class="mt-5 space-y-2 text-sm text-stone-600">
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-amber-600"></i> 45 Minuten Sitzung
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Vorgespräch inklusive
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Nachgespräch
+                                </li>
+                            </ul>
+                            <a href="https://calendly.com/klangschalenharmonie/schnuppersitzung"
+                                class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full h-11 text-sm font-medium transition-colors bg-orange-600 hover:bg-orange-700 text-white">
+                                <i data-lucide="calendar" class="w-4 h-4"></i>
+                                Erste Klangreise buchen
+                            </a>
+                        </div>
+                        <!-- Einzelsitzung -->
+                        <div class="p-6 sm:p-10 animate-on-scroll fade-slide-in" style="animation-delay: 0.4s;">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-xl tracking-tight font-medium text-stone-800">Intensive Klangreise</h3>
+                            </div>
+                            <div class="mt-3 flex items-end gap-2">
+                                <span class="text-4xl tracking-tight font-medium text-stone-900">CHF 120</span>
                             </div>
                             <ul class="mt-5 space-y-2 text-sm text-stone-600">
                                 <li class="flex items-center gap-2">
                                     <i data-lucide="check" class="w-4 h-4 text-amber-600"></i> 60 Minuten Sitzung
                                 </li>
                                 <li class="flex items-center gap-2">
-                                    <i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Erstgespräch inklusive
+                                    <i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Ausführliches Vorgespräch
                                 </li>
                                 <li class="flex items-center gap-2">
-                                    <i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Nachbetreuung
+                                    <i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Nachgespräch &
+                                    Empfehlungen
                                 </li>
                             </ul>
-                            <button
-                                class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full h-11 text-sm font-medium transition-colors bg-orange-600 hover:bg-orange-700 text-white">
-                                Einzelsitzung buchen
-                            </button>
-                        </div>
-                        <!-- Package -->
-                        <div class="p-6 sm:p-10 animate-on-scroll fade-slide-in" style="animation-delay: 0.4s;">
-                            <div class="flex items-center justify-between">
-                                <h3 class="text-xl tracking-tight font-medium text-stone-800">4er-Paket</h3>
-                            </div>
-                            <div class="mt-3 flex items-end gap-2">
-                                <span class="text-4xl tracking-tight font-medium text-stone-900">CHF 299</span>
-                                <span class="text-stone-500 mb-1 text-sm">/Paket</span>
-                                <span
-                                    class="text-xs border rounded-full px-2 py-0.5 text-orange-600 bg-orange-50 border-orange-200">12%
-                                    sparen</span>
-                            </div>
-                            <ul class="mt-5 space-y-2 text-sm text-stone-600">
-                                <li class="flex items-center gap-2">
-                                    <i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Alles aus der
-                                    Einzelsitzung
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Fortschrittsverfolgung
-                                </li>
-                                <li class="flex items-center gap-2">
-                                    <i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Prioritätsbuchung
-                                </li>
-                            </ul>
-                            <button
+                            <a href="https://calendly.com/klangschalenharmonie/30min"
                                 class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full h-11 text-sm font-medium transition-colors bg-stone-900 text-white hover:bg-stone-800">
-                                4er-Paket buchen
-                            </button>
+                                <i data-lucide="calendar" class="w-4 h-4"></i>
+                                Klangreise buchen
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -339,8 +400,8 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Testimonial 1 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Testimonial 1 - Marion -->
                 <div class="border p-8 rounded-2xl animate-on-scroll fade-slide-in bg-white border-stone-200/50"
                     style="animation-delay: 0.2s;">
                     <div class="flex gap-1 text-orange-500 mb-4">
@@ -350,18 +411,18 @@
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                     </div>
-                    <p class="text-base font-serif italic mb-6 text-stone-700">"Nach nur einer Sitzung spürte ich eine
-                        tiefe innere Ruhe, die ich seit Jahren nicht mehr erlebt hatte. Die Schwingungen schienen
-                        Spannungen zu lösen, von denen ich nicht einmal wusste, dass ich sie hatte."</p>
+                    <p class="text-base font-serif italic mb-6 text-stone-700">"Könnte ich jeden Tag machen, mein Gefühl
+                        und Eindruck während der Sitzung... es haben sich einige Blockaden gezeigt, damit kann ich
+                        weiter arbeiten, Robertas Arbeit ist Phänomenal und je nach Bewusstsein Zustand auch sehr
+                        Hilfreich, Herzlichen Dank für dein SEIN Liebe Roberta"</p>
                     <div class="flex gap-3 items-center">
                         <div>
-                            <p class="text-sm font-medium text-stone-800">Maria S.</p>
-                            <p class="text-xs text-stone-500">Stressbewältigung</p>
+                            <p class="text-sm font-medium text-stone-800">Marion</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Testimonial 2 -->
+                <!-- Testimonial 2 - Jeannette -->
                 <div class="border p-8 rounded-2xl animate-on-scroll fade-slide-in bg-white border-stone-200/50"
                     style="animation-delay: 0.3s;">
                     <div class="flex gap-1 text-orange-500 mb-4">
@@ -371,13 +432,30 @@
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                     </div>
-                    <p class="text-base font-serif italic mb-6 text-stone-700">"Ich habe viele Wellness-Therapien
-                        ausprobiert, aber nichts ist mit der Klangschalenerfahrung vergleichbar. Mein Schlaf hat sich
-                        dramatisch verbessert und meine Angst ist endlich beherrschbar."</p>
+                    <p class="text-base font-serif italic mb-6 text-stone-700">"Ich konnte mich total entspannen, dabei
+                        bin ich eingeschlafen. Tolle Klangmassage kann es nur weiterempfehlen. Danke"</p>
                     <div class="flex items-center gap-3">
                         <div>
-                            <p class="text-sm font-medium text-stone-800">Thomas K.</p>
-                            <p class="text-xs text-stone-500">Schlaf & Entspannung</p>
+                            <p class="text-sm font-medium text-stone-800">Jeannette</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 - Gabriela -->
+                <div class="border p-8 rounded-2xl animate-on-scroll fade-slide-in bg-white border-stone-200/50"
+                    style="animation-delay: 0.4s;">
+                    <div class="flex gap-1 text-orange-500 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-base font-serif italic mb-6 text-stone-700">"Die Klangmassage hat mir geholfen in
+                        einer schwierigen Zeit, Ruhe in meinen Kopf zu bringen. Danke Roberta!"</p>
+                    <div class="flex items-center gap-3">
+                        <div>
+                            <p class="text-sm font-medium text-stone-800">Gabriela</p>
                         </div>
                     </div>
                 </div>
@@ -407,32 +485,12 @@
                             <div>
                                 <p class="text-sm font-medium text-stone-800">Telefon</p>
                                 <div class="flex items-center gap-2">
-                                    <span class="text-sm text-stone-600 phone-hidden" data-phone="+41 79 240 93 18">+41
-                                        79 ••• •• ••</span>
+                                    <span class="text-sm text-stone-600 phone-hidden" data-phone="+41 76 696 57 19">+41
+                                        76 ••• •• ••</span>
                                     <button type="button"
                                         class="phone-reveal text-xs text-orange-600 hover:text-orange-700 font-medium transition-colors">Nummer
                                         anzeigen</button>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-orange-100 border border-orange-200/50 shrink-0">
-                                <i data-lucide="mail" class="w-5 h-5 text-amber-700"></i>
-                            </div>
-                            <div>
-                                <p class="text-sm font-medium text-stone-800">E-Mail</p>
-                                <p class="text-sm text-stone-600">klangschalenharmonie [at] gmail [punkt] com</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-orange-100 border border-orange-200/50 shrink-0">
-                                <i data-lucide="map-pin" class="w-5 h-5 text-amber-700"></i>
-                            </div>
-                            <div>
-                                <p class="text-sm font-medium text-stone-800">Standort</p>
-                                <p class="text-sm text-stone-600">Freudentalstrasse 4, 8235 Lohn (Schaffhausen)</p>
                             </div>
                         </div>
                     </div>
@@ -525,8 +583,8 @@
                     data-open="true">
                     <button type="button"
                         class="faq-btn w-full text-left px-6 sm:px-8 py-5 sm:py-6 flex items-start justify-between gap-6 hover:bg-stone-50/50 transition-colors">
-                        <span class="text-lg sm:text-xl font-medium tracking-tight text-stone-800">Was sollte ich zu
-                            einer Sitzung anziehen?</span>
+                        <span class="text-lg sm:text-xl font-medium tracking-tight text-stone-800">Ist die Klangmassage
+                            für jeden geeignet?</span>
                         <span
                             class="faq-icon inline-flex items-center justify-center rounded-full bg-stone-100 ring-1 ring-stone-200/50 text-stone-600 h-8 w-8 shrink-0">
                             <i data-lucide="plus" class="w-4 h-4"></i>
@@ -534,11 +592,9 @@
                     </button>
                     <div class="faq-panel">
                         <div class="px-6 sm:px-8 pb-6 sm:pb-8 pt-0">
-                            <p class="text-sm sm:text-base text-stone-600 leading-relaxed">Bequeme, locker sitzende
-                                Kleidung wird empfohlen, um maximale Entspannung zu ermöglichen. Vermeiden Sie enge
-                                Gürtel, einengende Kleidung oder schweren Schmuck. Viele Kunden bevorzugen weiche,
-                                natürliche Stoffe, die ihnen das Atmen und freie Bewegen während der Sitzung
-                                ermöglichen.</p>
+                            <p class="text-sm sm:text-base text-stone-600 leading-relaxed">In der Regel ist die
+                                Klangmassage für die meisten Menschen sicher und angenehm. Personen mit schweren
+                                gesundheitlichen Problemen sollten jedoch vorher mit einem Arzt sprechen.</p>
                         </div>
                     </div>
                 </div>
@@ -548,8 +604,8 @@
                     data-open="false">
                     <button type="button"
                         class="faq-btn w-full text-left px-6 sm:px-8 py-5 sm:py-6 flex items-center justify-between gap-6 hover:bg-stone-50/50 transition-colors">
-                        <span class="text-lg sm:text-xl font-medium tracking-tight text-stone-800">Wie lange dauert eine
-                            typische Sitzung?</span>
+                        <span class="text-lg sm:text-xl font-medium tracking-tight text-stone-800">Wie fühlt sich eine
+                            Klangmassage an?</span>
                         <span
                             class="faq-icon inline-flex items-center justify-center rounded-full bg-stone-100 ring-1 ring-stone-200/50 text-stone-600 h-8 w-8 shrink-0">
                             <i data-lucide="plus" class="w-4 h-4"></i>
@@ -557,10 +613,9 @@
                     </button>
                     <div class="faq-panel">
                         <div class="px-6 sm:px-8 pb-6 sm:pb-8 pt-0">
-                            <p class="text-sm sm:text-base text-stone-600 leading-relaxed">Standardsitzungen dauern 60
-                                Minuten, inklusive einer kurzen Beratung, dem Klangbad-Erlebnis und Zeit zur Integration
-                                danach. Erweiterte 90-Minuten-Sitzungen sind auch für diejenigen verfügbar, die eine
-                                tiefere Erfahrung suchen.</p>
+                            <p class="text-sm sm:text-base text-stone-600 leading-relaxed">Eine Klangmassage wird oft
+                                als äusserst entspannend und beruhigend beschrieben. Die sanften Schwingungen der
+                                Schalen können ein tiefes Gefühl der Gelassenheit erzeugen.</p>
                         </div>
                     </div>
                 </div>
@@ -570,8 +625,8 @@
                     data-open="false">
                     <button type="button"
                         class="faq-btn w-full text-left px-6 sm:px-8 py-5 sm:py-6 flex items-center justify-between gap-6 hover:bg-stone-50/50 transition-colors">
-                        <span class="text-lg sm:text-xl font-medium tracking-tight text-stone-800">Ist
-                            Klangschalentherapie für jeden sicher?</span>
+                        <span class="text-lg sm:text-xl font-medium tracking-tight text-stone-800">Gibt es
+                            wissenschaftliche Beweise für die Wirksamkeit der Klangmassage?</span>
                         <span
                             class="faq-icon inline-flex items-center justify-center rounded-full bg-stone-100 ring-1 ring-stone-200/50 text-stone-600 h-8 w-8 shrink-0">
                             <i data-lucide="plus" class="w-4 h-4"></i>
@@ -579,11 +634,10 @@
                     </button>
                     <div class="faq-panel">
                         <div class="px-6 sm:px-8 pb-6 sm:pb-8 pt-0">
-                            <p class="text-sm sm:text-base text-stone-600 leading-relaxed">Klangschalentherapie ist
-                                generell sanft und für die meisten Menschen sicher. Sie ist jedoch möglicherweise nicht
-                                geeignet für Personen mit bestimmten Erkrankungen wie Epilepsie, schweren psychischen
-                                Störungen oder Herzschrittmachern. Bitte konsultieren Sie mich vor der Buchung, wenn Sie
-                                gesundheitliche Bedenken haben.</p>
+                            <p class="text-sm sm:text-base text-stone-600 leading-relaxed">Die wissenschaftliche
+                                Forschung zur Klangmassage ist begrenzt, aber es gibt zahlreiche Berichte von Menschen,
+                                die von den positiven Auswirkungen auf ihre Gesundheit und Entspannung profitiert haben.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -593,8 +647,8 @@
                     data-open="false">
                     <button type="button"
                         class="faq-btn w-full text-left px-6 sm:px-8 py-5 sm:py-6 flex items-center justify-between gap-6 hover:bg-stone-50/50 transition-colors">
-                        <span class="text-lg sm:text-xl font-medium tracking-tight text-stone-800">Wie viele Sitzungen
-                            brauche ich?</span>
+                        <span class="text-lg sm:text-xl font-medium tracking-tight text-stone-800">Wie lange dauert eine
+                            typische Klangmassage?</span>
                         <span
                             class="faq-icon inline-flex items-center justify-center rounded-full bg-stone-100 ring-1 ring-stone-200/50 text-stone-600 h-8 w-8 shrink-0">
                             <i data-lucide="plus" class="w-4 h-4"></i>
@@ -602,10 +656,8 @@
                     </button>
                     <div class="faq-panel">
                         <div class="px-6 sm:px-8 pb-6 sm:pb-8 pt-0">
-                            <p class="text-sm sm:text-base text-stone-600 leading-relaxed">Während viele Kunden bereits
-                                nach einer Sitzung Vorteile spüren, werden oft 4-6 Sitzungen für dauerhafte Ergebnisse
-                                empfohlen. Die Häufigkeit hängt von Ihren persönlichen Zielen ab – manche bevorzugen
-                                wöchentliche Sitzungen, andere kommen monatlich zur Pflege und Stressabbau.</p>
+                            <p class="text-sm sm:text-base text-stone-600 leading-relaxed">Die Dauer einer Klangmassage
+                                kann variieren, typischerweise dauert sie jedoch etwa 60 bis 90 Minuten.</p>
                         </div>
                     </div>
                 </div>
@@ -615,8 +667,8 @@
                     data-open="false">
                     <button type="button"
                         class="faq-btn w-full text-left px-6 sm:px-8 py-5 sm:py-6 flex items-center justify-between gap-6 hover:bg-stone-50/50 transition-colors">
-                        <span class="text-lg sm:text-xl font-medium tracking-tight text-stone-800">Was kann ich während
-                            einer Sitzung erwarten?</span>
+                        <span class="text-lg sm:text-xl font-medium tracking-tight text-stone-800">Kann ich
+                            Klangmassagen zu Hause selbst durchführen?</span>
                         <span
                             class="faq-icon inline-flex items-center justify-center rounded-full bg-stone-100 ring-1 ring-stone-200/50 text-stone-600 h-8 w-8 shrink-0">
                             <i data-lucide="plus" class="w-4 h-4"></i>
@@ -624,11 +676,10 @@
                     </button>
                     <div class="faq-panel">
                         <div class="px-6 sm:px-8 pb-6 sm:pb-8 pt-0">
-                            <p class="text-sm sm:text-base text-stone-600 leading-relaxed">Sie liegen bequem auf einer
-                                Massageliege oder Yogamatte, während ich verschiedene Klangschalen um und manchmal auf
-                                Ihrem Körper spiele. Die meisten Menschen erleben tiefe Entspannung, manche sehen Farben
-                                oder haben lebhafte Bilder, und viele spüren ein Kribbeln, wenn die Schwingungen durch
-                                sie hindurchgehen.</p>
+                            <p class="text-sm sm:text-base text-stone-600 leading-relaxed">Ja, es ist möglich,
+                                Klangmassagen zu Hause durchzuführen, nachdem man die grundlegenden Techniken erlernt
+                                hat. Es kann jedoch hilfreich sein, eine professionelle Massage zu erleben, um die
+                                Technik und die Wirkung besser zu verstehen.</p>
                         </div>
                     </div>
                 </div>
@@ -677,7 +728,7 @@
                     </li>
                     <li class="flex gap-2 items-center">
                         <i data-lucide="phone" class="w-4 h-4 shrink-0"></i>
-                        <span class="phone-hidden" data-phone="+41 79 240 93 18">+41 79 ••• •• ••</span>
+                        <span class="phone-hidden" data-phone="+41 76 696 57 19">+41 76 ••• •• ••</span>
                         <button type="button"
                             class="phone-reveal text-xs text-orange-400 hover:text-orange-300 font-medium transition-colors ml-1">Anzeigen</button>
                     </li>

@@ -24,6 +24,7 @@
         transform: translateY(30px);
         filter: blur(8px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -37,6 +38,7 @@
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -48,6 +50,7 @@
     0% {
         transform: scale(1);
     }
+
     100% {
         transform: scale(1.1);
     }
@@ -132,6 +135,42 @@
 }
 
 .faq-icon i {
+    transition: transform 0.2s ease;
+}
+
+/* --------------------------------------------------------------------------
+   Impact Cards
+   -------------------------------------------------------------------------- */
+.impact-card .impact-card-panel {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.impact-card[data-open="true"] .impact-card-panel {
+    max-height: 300px;
+    opacity: 1;
+}
+
+.impact-card[data-open="true"] {
+    background: linear-gradient(to bottom, rgb(255 247 237 / 0.3), white);
+}
+
+.impact-card[data-open="true"] .impact-card-icon {
+    background-color: rgb(255 237 213);
+    border-color: rgb(253 186 116 / 0.5);
+}
+
+.impact-card[data-open="true"] .impact-card-icon i {
+    color: rgb(194 65 12);
+}
+
+.impact-card[data-open="true"] .impact-card-toggle i {
+    transform: rotate(45deg);
+}
+
+.impact-card-toggle i {
     transition: transform 0.2s ease;
 }
 
