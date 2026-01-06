@@ -3,7 +3,7 @@
  * Self-contained implementation with Google Consent Mode V2
  */
 
-(function() {
+(function () {
     'use strict';
 
     const CONSENT_KEY = 'klangschalenharmonie_consent';
@@ -142,6 +142,15 @@
                 flex-wrap: wrap;
                 align-items: center;
                 gap: 0.75rem;
+                flex-direction: row-reverse;
+                justify-content: flex-start;
+            }
+
+            @media (min-width: 768px) {
+                .cc-banner-buttons {
+                    flex-direction: row;
+                    justify-content: flex-start;
+                }
             }
 
             .cc-btn {
@@ -558,7 +567,7 @@
     function init() {
         // Check for existing consent
         const existingConsent = getStoredConsent();
-        
+
         if (existingConsent) {
             // Apply stored consent without showing banner
             updateGoogleConsent(existingConsent);
@@ -569,7 +578,7 @@
         injectStyles();
         injectHTML();
         initEventHandlers();
-        
+
         // Initialize icons after a short delay to ensure Lucide is ready
         setTimeout(initIcons, 100);
     }
